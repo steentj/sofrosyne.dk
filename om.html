@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om – Sofrosyne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-teal-700 font-bold text-xl">Sofrosyne</a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html">Galleri</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html" aria-current="page">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-bold text-teal-600 mb-10 text-center animate-fadeIn">Om & Attribution</h1>
+        <p class="text-gray-700 mb-8 max-w-3xl mx-auto text-center">Her krediteres billederne anvendt på sofrosyne.dk. Klik på kilde-linket for at se den fulde licens og eventuelle krav. Hvis et billede mangler præcis kilde, er det markeret, og vi opdaterer så snart linket er bekræftet.</p>
+
+        <section class="space-y-6">
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Platon (buste)</h2>
+                <p class="text-sm text-gray-700">Foto: Marie-Lan Nguyen. Licens: Creative Commons Attribution 2.5 (CC BY 2.5) – <a class="text-teal-700 underline" href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">licenstekst</a>. Kilde: <a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>. 
+                    Krav: angiv ophavsmand, link til licens og noter ændringer.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Aristoteles (buste)</h2>
+                <p class="text-sm text-gray-700">Foto: Jastrow. Licens: Offentligt domæne (Public Domain). Kilde: <a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Marcus Aurelius (statue)</h2>
+                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Parthenon, Athen</h2>
+                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Græsk vasemaleri (amfora)</h2>
+                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Græsk natur (Pixabay)</h2>
+                <p class="text-sm text-gray-700">Fotograf: AlainAudet. Licens: Pixabay Content License (fri brug, ingen navngivning krævet; redaktionel brug og modeller/brands kan have særkrav) – <a class="text-teal-700 underline" href="https://pixabay.com/service/license-summary/" target="_blank" rel="noopener">licensoversigt</a>. Kilde: <a class="text-teal-700 underline" href="https://pixabay.com/photos/greece-2439546/" target="_blank" rel="noopener">Pixabay – Greece 2439546</a>. 
+                Krav: Navngivning ikke påkrævet, men kreditering er værdsat.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-lg shadow border">
+                <h2 class="text-lg font-semibold text-teal-700">Forsidens hero-billede</h2>
+                <p class="text-sm text-gray-700">Fil: <code>sofrosyne.jpg</code>. Kilde: Angiv venligst oprindelse/licens, så attribution kan tilføjes (hvis påkrævet).</p>
+            </div>
+        </section>
+
+        <p class="text-xs text-gray-500 mt-8">Bemærk: Licenstekster på Wikimedia Commons kan være på engelsk; se altid den linkede side for fulde vilkår. Ved ændringer/beskæring af billeder angives dette.</p>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

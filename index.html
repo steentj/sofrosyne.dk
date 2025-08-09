@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sofrosyne – Klassisk filosofi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <span class="text-teal-700 font-bold text-xl">Sofrosyne</span>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html" aria-current="page">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html">Galleri</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="hero mb-14" style="--hero-image: url('sofrosyne.jpg');">
+            <div class="hero-content">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 animate-fadeIn">Sofrosyne</h1>
+                <p class="text-base sm:text-lg max-w-2xl mx-auto mb-6 opacity-95">Et lille digitalt sted for klassisk filosofi, mådehold og indsigt. Udforsk galleri, citater og historiske perspektiver i et roligt, enkelt layout.</p>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a href="historie.html" class="px-5 py-3 rounded-md bg-teal-600 text-white font-semibold shadow hover:bg-teal-700 transition">Historie</a>
+                    <a href="galleri.html" class="px-5 py-3 rounded-md bg-white border border-teal-600 text-teal-700 font-semibold shadow hover:bg-teal-50 transition">Galleri</a>
+                    <a href="citatbibliotek.html" class="px-5 py-3 rounded-md bg-white border border-teal-600 text-teal-700 font-semibold shadow hover:bg-teal-50 transition">Citatbibliotek</a>
+                </div>
+            </div>
+        </section>
+        <section class="grid md:grid-cols-2 gap-10">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-lg font-semibold text-teal-700 mb-2">Hvad er sofrosyne?</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">Sofrosyne (σωφροσύνη) er et klassisk græsk nøglebegreb, der beskriver selvbeherskelse, mådehold og indre harmoni. Det handler om evnen til at regulere begær og impulser, så fornuften kan lede handlingen.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">Hos Platon og Aristoteles forbindes sofrosyne med dyd og karakterdannelse: et stabilt sind, der hverken drives af overdrivelse eller mangel, men søger det passende mål. I den stoiske tradition peger begrebet mod indre ro og frihed gennem disciplineret opmærksomhed.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Kort sagt: et praktisk ideal for at leve godt – i balance med sig selv og andre.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-lg font-semibold text-teal-700 mb-2">Hvorfor er sofrosyne relevant i dag?</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">I en hverdag præget af konstant stimulering og krav kan sofrosyne give et jordnært sprog for at skabe plads, prioritere og handle med omtanke. Det er ikke askese, men et bevidst forhold til det, der former os.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Mental klarhed: mindre reaktivitet, mere nærvær</li>
+                        <li>Bedre beslutninger: balanceret vurdering frem for impulser</li>
+                        <li>Hverdagsrobusthed: indre ro midt i forandring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

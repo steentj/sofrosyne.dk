@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Citatbibliotek – Sofrosyne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-teal-700 font-bold text-xl">Sofrosyne</a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html">Galleri</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html" aria-current="page">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-bold text-teal-600 mb-12 text-center animate-fadeIn">Citatbibliotek</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"Mådehold er sjælens bedste forsvar mod lidenskabernes storme."</p>
+                <footer class="text-right font-semibold text-teal-600">– Platon
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Tilskrives Platon; tema om sofrosyne i Platons værker – parafrase</cite>
+                </footer>
+            </blockquote>
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"Dyd ligger i midten, og mådehold er balancen mellem overdrivelse og mangel."</p>
+                <footer class="text-right font-semibold text-teal-600">– Aristoteles
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Den nikomacheiske etik, II.6 (mesoteslæren) – parafrase</cite>
+                </footer>
+            </blockquote>
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"Den, der behersker sig selv, er fri."</p>
+                <footer class="text-right font-semibold text-teal-600">– Seneca
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Tilskrives Seneca; ofte gengivet som “Maxime potens est qui se habet in potestate” – parafrase</cite>
+                </footer>
+            </blockquote>
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"At kende sig selv er begyndelsen til al visdom."</p>
+                <footer class="text-right font-semibold text-teal-600">– Sokrates
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Delphisk maksime “Gnōthi seautón” (Kend dig selv); ofte tilskrevet Sokrates – parafrase</cite>
+                </footer>
+            </blockquote>
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"Det er ikke tingene selv, men vores opfattelse af dem, der forstyrrer os."</p>
+                <footer class="text-right font-semibold text-teal-600">– Epiktet
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Håndbogen (Enchiridion), kapitel 5 – parafrase</cite>
+                </footer>
+            </blockquote>
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600 italic text-gray-800">
+                <p class="mb-4">"Sand lykke findes i indre fred og selvkontrol."</p>
+                <footer class="text-right font-semibold text-teal-600">– Marcus Aurelius
+                    <cite class="block not-italic text-xs text-gray-500 font-normal">Meditationer – parafrase</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

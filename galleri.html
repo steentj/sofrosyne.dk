@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galleri – Sofrosyne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-teal-700 font-bold text-xl">Sofrosyne</a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html" aria-current="page">Galleri</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-bold text-teal-600 mb-12 text-center animate-fadeIn">Galleri</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Platon -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/plato.jpg" alt="Platon statue" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Platon</h3>
+                </div>
+            </div>
+            <!-- Aristoteles -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/aristotle.jpg" alt="Aristoteles statue" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Aristoteles</h3>
+                </div>
+            </div>
+            <!-- Marcus Aurelius -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/marcus-aurelius.jpg" alt="Marcus Aurelius statue" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Marcus Aurelius</h3>
+                </div>
+            </div>
+            <!-- Parthenon -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/parthenon.jpg" alt="Parthenon i Athen" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Parthenon, Athen</h3>
+                </div>
+            </div>
+            <!-- Græsk Vasemaleri -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/greek-amphora.jpg" alt="Græsk vasemaleri" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Græsk Vasemaleri</h3>
+                </div>
+            </div>
+            <!-- Græsk Natur -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="images/greece-2439546_1280.jpg" alt="Græsk natur" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />
+                <div class="p-4 bg-white">
+                    <h3 class="text-lg font-semibold text-gray-800">Græsk Natur</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

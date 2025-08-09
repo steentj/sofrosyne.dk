@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historie – Sofrosyne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-teal-700 font-bold text-xl">Sofrosyne</a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html" aria-current="page">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html">Galleri</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-bold text-teal-600 mb-8 text-center animate-fadeIn">Historie</h1>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">Kort introduktion til sofrosyne i den klassiske verden. Denne side er et udgangspunkt og kan udbygges med mere detaljerede afsnit (fx græsk oprindelse, stoicisme, reception i renæssancen).</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Oprindelse i græsk etik og poesi</li>
+            <li>Platon og Aristoteles’ fortolkninger</li>
+            <li>Stoisk selvbeherskelse og indre ro</li>
+        </ul>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

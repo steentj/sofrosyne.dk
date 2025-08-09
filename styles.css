@@ -1,0 +1,96 @@
+/* Fælles stilark for Sofrosyne.dk */
+:root{
+  --brand: #0f766e; /* teal-700 */
+  --brand-600: #0d9488; /* teal-600 */
+  --ink: #111827; /* gray-900 */
+  --muted: #6b7280; /* gray-500 */
+  --bg: #f9fafb; /* gray-50 */
+}
+
+/* Animationer */
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+.animate-fadeIn { animation: fadeIn 1.2s ease-in forwards }
+
+/* Navigation */
+.nav a[aria-current="page"], .nav a.active{
+  color: var(--brand-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Hero */
+.hero{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: .75rem;
+  min-height: clamp(260px, 42vh, 520px);
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero::after{
+  content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.45)); z-index:0
+}
+.hero .hero-content{
+  position:absolute; inset:0; z-index:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; text-align:center; color:white
+}
+
+/* Tablet portrait */
+@media (min-width: 640px) and (max-width: 899px){
+  .hero{ min-height: clamp(320px, 48vh, 560px) }
+}
+
+/* Tablet landscape */
+@media (min-width: 900px) and (max-width: 1199px){
+  .hero{ min-height: clamp(320px, 50vh, 600px) }
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+  .hero{ min-height: clamp(380px, 52vh, 680px) }
+}
+
+/* Cards */
+.card{ background:#fff; border:1px solid rgba(13,148,136,.08); border-radius:.75rem; box-shadow: 0 1px 2px rgba(0,0,0,.04) }
+.card .card-body{ padding:1.5rem }
+
+/* Footer */
+.site-footer{ color:#4b5563 }
+
+/* Theme toggle button */
+.theme-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:30px; height:30px; border-radius:.5rem;
+  padding:0; border:none;
+  background:transparent; color:var(--brand);
+}
+.theme-toggle:hover{ background:rgba(45,212,191,0.08) }
+.theme-toggle:focus-visible{ outline:2px solid rgba(45,212,191,0.6); outline-offset:2px; border-radius:.6rem }
+
+/* Dark theme overrides */
+[data-theme="dark"]{
+  --bg: #0b1220;
+  --ink: #e5e7eb;
+  --brand: #2dd4bf; /* teal-400 */
+  --brand-600: #2dd4bf;
+}
+[data-theme="dark"] body{ background: var(--bg); color: var(--ink) }
+[data-theme="dark"] .bg-gray-50{ background:#0b1220 !important }
+[data-theme="dark"] .bg-gray-100{ background:#0b1220 !important; border-top:1px solid rgba(148,163,184,.12) }
+[data-theme="dark"] .bg-white{ background:#0f172a !important }
+[data-theme="dark"] .text-gray-900{ color:#f1f5f9 !important }
+[data-theme="dark"] .text-gray-800{ color:#e2e8f0 !important }
+[data-theme="dark"] .text-gray-700{ color:#cbd5e1 !important }
+[data-theme="dark"] .text-teal-700{ color:#2dd4bf !important }
+[data-theme="dark"] .card{ background:#0f172a; border-color: rgba(148,163,184,.15) }
+[data-theme="dark"] .nav a[aria-current="page"], [data-theme="dark"] .nav a.active{ color:#2dd4bf }
+[data-theme="dark"] .theme-toggle{ background:transparent; color:#2dd4bf }
+[data-theme="dark"] .theme-toggle:hover{ background:rgba(45,212,191,0.12) }
+
+/* Mobile nav small polish */
+.nav #nav-links {
+  transition: all 0.2s ease;
+}
+[data-theme="dark"] .theme-toggle:hover{ background:rgba(45,212,191,0.12) }

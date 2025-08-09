@@ -89,6 +89,13 @@
 [data-theme="dark"] .theme-toggle{ background:transparent; color:#2dd4bf }
 [data-theme="dark"] .theme-toggle:hover{ background:rgba(45,212,191,0.12) }
 
+/* Quote figure layout */
+.quote-figure{ display:flex; gap:1rem; align-items:flex-start; }
+.quote-figure img{ width:128px; height:128px; object-fit:cover; border-radius:.75rem; box-shadow:0 2px 4px rgba(0,0,0,.12); border:1px solid rgba(0,0,0,.05) }
+[data-theme="dark"] .quote-figure img{ border-color: rgba(255,255,255,.08) }
+.quote-figure blockquote{ margin:0; flex:1 }
+
+
 /* Mobile nav small polish */
 .nav #nav-links {
   transition: all 0.2s ease;

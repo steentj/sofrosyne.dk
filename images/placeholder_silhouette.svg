@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Silhuet">
+  <rect width="128" height="128" rx="12" fill="#0f766e"/>
+  <circle cx="64" cy="46" r="26" fill="#f9fafb"/>
+  <path d="M20 116c2.4-26 21.6-42 44-42s41.6 16 44 42" fill="#f9fafb"/>
+</svg>

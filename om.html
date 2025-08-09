@@ -22,7 +22,6 @@
                 <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
                     <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
                     <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
-                    <li><a class="text-gray-700 hover:text-teal-600" href="galleri.html">Galleri</a></li>
                     <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
                     <li><a class="text-gray-700 hover:text-teal-600" href="om.html" aria-current="page">Om</a></li>
                 </ul>
@@ -34,42 +33,135 @@
         <h1 class="text-5xl font-bold text-teal-600 mb-10 text-center animate-fadeIn">Om & Attribution</h1>
         <p class="text-gray-700 mb-8 max-w-3xl mx-auto text-center">Her krediteres billederne anvendt på sofrosyne.dk. Klik på kilde-linket for at se den fulde licens og eventuelle krav. Hvis et billede mangler præcis kilde, er det markeret, og vi opdaterer så snart linket er bekræftet.</p>
 
-        <section class="space-y-6">
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Platon (buste)</h2>
-                <p class="text-sm text-gray-700">Foto: Marie-Lan Nguyen. Licens: Creative Commons Attribution 2.5 (CC BY 2.5) – <a class="text-teal-700 underline" href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">licenstekst</a>. Kilde: <a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>. 
-                    Krav: angiv ophavsmand, link til licens og noter ændringer.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Aristoteles (buste)</h2>
-                <p class="text-sm text-gray-700">Foto: Jastrow. Licens: Offentligt domæne (Public Domain). Kilde: <a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Marcus Aurelius (statue)</h2>
-                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Parthenon, Athen</h2>
-                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Græsk vasemaleri (amfora)</h2>
-                <p class="text-sm text-gray-700">Kilde ønskes: Angiv venligst link til kilde/filside på Wikimedia/Pixabay el.lign., så attribution og licens kan udfyldes korrekt.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Græsk natur (Pixabay)</h2>
-                <p class="text-sm text-gray-700">Fotograf: AlainAudet. Licens: Pixabay Content License (fri brug, ingen navngivning krævet; redaktionel brug og modeller/brands kan have særkrav) – <a class="text-teal-700 underline" href="https://pixabay.com/service/license-summary/" target="_blank" rel="noopener">licensoversigt</a>. Kilde: <a class="text-teal-700 underline" href="https://pixabay.com/photos/greece-2439546/" target="_blank" rel="noopener">Pixabay – Greece 2439546</a>. 
-                Krav: Navngivning ikke påkrævet, men kreditering er værdsat.</p>
-            </div>
-
-            <div class="bg-white p-5 rounded-lg shadow border">
-                <h2 class="text-lg font-semibold text-teal-700">Forsidens hero-billede</h2>
-                <p class="text-sm text-gray-700">Fil: <code>sofrosyne.jpg</code>. Kilde: Angiv venligst oprindelse/licens, så attribution kan tilføjes (hvis påkrævet).</p>
+        <section class="mt-10">
+            <div class="overflow-x-auto bg-white border rounded-lg shadow">
+                <table class="min-w-full text-sm align-top">
+                    <caption class="text-left px-4 py-3 font-semibold text-teal-700">Attributionsoversigt</caption>
+                    <thead class="bg-gray-100 text-gray-700">
+                        <tr class="text-left">
+                            <th class="px-4 py-2 font-semibold">Emne</th>
+                            <th class="px-4 py-2 font-semibold">Beskrivelse</th>
+                            <th class="px-4 py-2 font-semibold">Licens</th>
+                            <th class="px-4 py-2 font-semibold">Kilde</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Silhuet (pladsholder)</td>
+                            <td class="px-4 py-2">Egenudviklet SVG-silhuet anvendt midlertidigt hvor frit foto ikke er verificeret.</td>
+                            <td class="px-4 py-2 text-gray-500">N/A (egen grafik)</td>
+                            <td class="px-4 py-2 text-gray-500">—</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Platon (buste)</td>
+                            <td class="px-4 py-2">Foto: Marie-Lan Nguyen. Fil: Plato Silanion Musei Capitolini MC1377.</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">CC BY 2.5</a></td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Sokrates (buste)</td>
+                            <td class="px-4 py-2">Fil: Socrates Louvre Ma83.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Socrates_Louvre_Ma83_n2.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Aristoteles</td>
+                            <td class="px-4 py-2">After Lysippos skulptur.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Marcus Aurelius (buste)</td>
+                            <td class="px-4 py-2">Fil: Marcus Aurelius Louvre MR561.</td>
+                            <td class="px-4 py-2 text-gray-500">CC BY 2.5</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Louvre_MR561_n02.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Seneca (dobbelt-herma)</td>
+                            <td class="px-4 py-2">Fotograf: Calidius. Duble herma of Socrates and Seneca.</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_03_.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Epiktetos</td>
+                            <td class="px-4 py-2">Fil: Epitteto disegno busto.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Epitteto_disegno_busto.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Epikur (buste)</td>
+                            <td class="px-4 py-2">Fil: Epicurus bust2.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Epicurus_bust2.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Cicero (buste)</td>
+                            <td class="px-4 py-2">Bertel Thorvaldsen skulptur foto.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Marcus_Tullius_Cicero_by_Bertel_Thorvaldsen.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Augustin</td>
+                            <td class="px-4 py-2">Fil: Augustine Lateran.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Augustine_Lateran.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Thomas Aquinas</td>
+                            <td class="px-4 py-2">Carlo Crivelli maleri.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Thomas_Aquinas_by_Carlo_Crivelli.png" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Michel de Montaigne</td>
+                            <td class="px-4 py-2">Fil: Michel de Montaigne 1.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Michel_de_Montaigne_1.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">John Stuart Mill</td>
+                            <td class="px-4 py-2">London Stereoscopic Company c. 1870.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:John_Stuart_Mill_by_London_Stereoscopic_Company,_c1870.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Josef Pieper</td>
+                            <td class="px-4 py-2">Midlertidig silhuet (egen SVG).</td>
+                            <td class="px-4 py-2 text-gray-500">Afventer</td>
+                            <td class="px-4 py-2 text-gray-500">—</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Jonathan Edwards</td>
+                            <td class="px-4 py-2">Fil: Princeton Portrait.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Jonathan_Edwards_(Princeton_Portrait).jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">G.K. Chesterton</td>
+                            <td class="px-4 py-2">Fil: Gilbert Chesterton.</td>
+                            <td class="px-4 py-2 text-gray-500">Public Domain</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Gilbert_Chesterton.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Alasdair MacIntyre</td>
+                            <td class="px-4 py-2">Fotograf: Sean O'Connor.</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Alasdair_MacIntyre.jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Martha Nussbaum</td>
+                            <td class="px-4 py-2">Fotograf: Sally Ryan.</td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></td>
+                            <td class="px-4 py-2"><a class="text-teal-700 underline" href="https://commons.wikimedia.org/wiki/File:Martha_Nussbaum_2010_(cropped2).jpg" target="_blank" rel="noopener">Wikimedia</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium text-gray-900">Forsidens hero-billede</td>
+                            <td class="px-4 py-2">AI-genereret (intern).</td>
+                            <td class="px-4 py-2 text-gray-500">Ingen krav</td>
+                            <td class="px-4 py-2 text-gray-500">—</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -79,3 +171,4 @@
     <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
 </body>
 </html>
+

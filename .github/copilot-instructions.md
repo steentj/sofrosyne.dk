@@ -5,7 +5,6 @@ Static multi-page Danish site about classical philosophy (sofrosyne). Pure HTML 
 
 ## Architecture & Files
 - `index.html`: Forside with hero (CSS background via `--hero-image` inline style) and intro sections.
-- `galleri.html`: Image gallery using local images under `images/` with `loading="lazy"` and `onerror` fallback to `sofrosyne.jpg`.
 - `citatbibliotek.html`: Blockquote grid with explicit <cite> sources; paraphrases noted.
 - `historie.html`: Placeholder historical overview content.
 - `om.html`: Attribution list for images (Platon, Aristoteles, etc.) and pending sources marked "Kilde ønskes".
@@ -52,7 +51,6 @@ Static multi-page Danish site about classical philosophy (sofrosyne). Pure HTML 
 
 ## Example: Adding a New Gallery Image
 1. Place file under `images/` (e.g. `images/stoic.jpg`).
-2. Add card in `galleri.html` copying existing structure; set `alt` clearly.
 3. Include `loading="lazy"` and fallback handler if needed.
 4. Add attribution block in `om.html` with source + license.
 

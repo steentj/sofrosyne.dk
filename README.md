@@ -7,7 +7,6 @@ En lille statisk dansk side om klassisk filosofi (sofrosyne). Ingen build‑pipe
 |-----|--------|
 | `index.html` | Forside med hero (baggrund via CSS variabel `--hero-image`) og introduktion |
 | `historie.html` | Kort historisk oversigt (kan udbygges) |
-| `galleri.html` | Galleri med lokale billeder (`images/`) + `loading="lazy"` og `onerror` fallback |
 | `citatbibliotek.html` | Citatsamling med `<blockquote>` + `<cite>` (parafraser tydeligt markeret) |
 | `om.html` | Attribution / kilde- og licensoversigt ("Kilde ønskes" ved manglende reference) |
 | `styles.css` | Farvevariabler, kort-/hero-styles, dark-mode overrides, animationer |
@@ -32,12 +31,6 @@ En lille statisk dansk side om klassisk filosofi (sofrosyne). Ingen build‑pipe
 2. Tilføj link i navigation på ALLE eksisterende sider og sæt `aria-current="page"` på den nye side.
 3. (Valgfrit) Hero: `<section class="hero" style="--hero-image: url('ny-fil.jpg')">` og placér billedet i `images/`.
 4. Opdatér attribution i `om.html` hvis der bruges nye billeder.
-
-## Tilføj et nyt galleri-billede
-1. Læg fil i `images/` (fx `stoic.jpg`).
-2. Kopiér et kort i `galleri.html` og opdatér `src`, `alt` og titel.
-3. Behold `loading="lazy"` og `onerror` fallback hvis billedet ikke er kritisk.
-4. Tilføj attribution-blok i `om.html`.
 
 ## Licenser & Attribution
 - Verificerede: Platon (CC BY 2.5), Aristoteles (Public Domain), Pixabay billed(er) (Pixabay Content License), hero (AI-genereret – markeret indtil evt. specifik licens defineres).

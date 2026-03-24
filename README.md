@@ -8,7 +8,9 @@ En lille statisk dansk side om klassisk filosofi (sofrosyne). Ingen build‑pipe
 | `index.html` | Forside med hero (baggrund via CSS variabel `--hero-image`) og introduktion |
 | `historie.html` | Kort historisk oversigt (kan udbygges) |
 | `citatbibliotek.html` | Citatsamling med `<blockquote>` + `<cite>` (parafraser tydeligt markeret) |
+| `ordliste.html` | Interaktiv ordliste med 100 oldgræske nøgleord, filtrering, sortering og opslag |
 | `om.html` | Attribution / kilde- og licensoversigt ("Kilde ønskes" ved manglende reference) |
+| `ordliste.js` | Datasæt + klientlogik til ordliste (rendering, filter, sortering, tooltip) |
 | `styles.css` | Farvevariabler, kort-/hero-styles, dark-mode overrides, animationer |
 | `theme.js` | Tema-toggle (localStorage) + hamburgermenu for små skærme |
 | `images/` | Lokale JPG aktiver (ingen eksterne links i drift) |
@@ -17,6 +19,7 @@ En lille statisk dansk side om klassisk filosofi (sofrosyne). Ingen build‑pipe
 - Mørkt/lyst tema (persist via `localStorage` key `theme`).
 - Hero-billede styres via inline style: `style="--hero-image: url('sofrosyne.jpg')"`.
 - Responsiv hamburgermenu (`#menu-toggle` ↔ `#nav-links`).
+- Ordliste med filtrering på græsk/dansk, sortering på begge kolonner og kontekst-tooltip ved hover/fokus.
 - Galleriets billeder har `onerror` fallback til `sofrosyne.jpg` for robusthed.
 - Citater bevarer kilde/transparens gennem `<cite class="...">`.
 - Attribution samlet centralt på `om.html`.

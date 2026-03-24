@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ordliste – Sofrosyne</title>
+    <link rel="icon" href="images/sofrosyne_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/sofrosyne_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=GFS+Didot&family=Cormorant+Garamond:wght@700&family=Sorts+Mill+Goudy&family=Noto+Serif:wght@700&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="theme.js" defer></script>
+    <script src="ordliste.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/sofrosyne_icon.png" alt="Sofrosyne ikon" class="h-6 mr-2" style="height: 3.5em;">
+                    <span class="text-teal-700 font-bold text-2xl" style="font-family: 'Cinzel', serif;">Sofrosyne</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="ordliste.html" aria-current="page">Ordliste</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="mb-10 text-center">
+            <h1 class="text-5xl font-bold text-teal-600 mb-5 animate-fadeIn">Oldgræsk Ordliste</h1>
+            <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Her finder du 100 centrale oldgræske begreber til læsning af antikkens tænkere, især Platon,
+                Aristoteles og Thukydid. Søg og filtrer i listen, og sortér på både det græske og det danske ord.
+                Tryk eller hold markøren over et ord for en kort klassisk kontekstforklaring.
+            </p>
+        </section>
+
+        <section class="glossary-card" aria-labelledby="glossary-heading">
+            <h2 id="glossary-heading" class="sr-only">Ordliste med filter og sortering</h2>
+            <div class="glossary-controls">
+                <label for="glossary-search" class="glossary-label">Filtrér ordliste</label>
+                <input
+                    id="glossary-search"
+                    class="glossary-input"
+                    type="search"
+                    placeholder="Søg på græsk, translitteration eller dansk"
+                    autocomplete="off"
+                    inputmode="search"
+                />
+                <div class="glossary-sort-bar" aria-label="Sortér ordlisten">
+                    <span class="glossary-sort-bar-label">Sortér:</span>
+                    <button type="button" class="glossary-sort glossary-sort-mobile" data-sort-key="greek" aria-pressed="true">
+                        Græsk <span class="glossary-sort-icon" aria-hidden="true">↑</span>
+                    </button>
+                    <button type="button" class="glossary-sort glossary-sort-mobile" data-sort-key="danish" aria-pressed="false">
+                        Dansk <span class="glossary-sort-icon" aria-hidden="true">↕</span>
+                    </button>
+                </div>
+                <p id="results-count" class="glossary-count" aria-live="polite"></p>
+            </div>
+
+            <div class="glossary-table-wrap" role="region" aria-label="Oldgræsk ordliste">
+                <table class="glossary-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <button type="button" class="glossary-sort" data-sort-key="greek" aria-pressed="true">
+                                    Græsk ord
+                                    <span class="glossary-sort-icon" aria-hidden="true">↑</span>
+                                </button>
+                            </th>
+                            <th scope="col">
+                                <button type="button" class="glossary-sort" data-sort-key="danish" aria-pressed="false">
+                                    Dansk betydning
+                                    <span class="glossary-sort-icon" aria-hidden="true">↕</span>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="glossary-body"></tbody>
+                </table>
+            </div>
+
+            <p id="empty-state" class="glossary-empty" hidden>
+                Ingen ord matcher din søgning. Prøv et kortere ord eller en anden stavemåde.
+            </p>
+        </section>
+    </main>
+
+    <div id="glossary-tooltip" class="glossary-tooltip" role="tooltip" hidden></div>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

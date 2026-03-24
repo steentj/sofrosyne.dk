@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personer – Sofrosyne</title>
+    <link rel="icon" href="images/sofrosyne_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/sofrosyne_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=GFS+Didot&family=Cormorant+Garamond:wght@700&family=Sorts+Mill+Goudy&family=Noto+Serif:wght@700&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/sofrosyne_icon.png" alt="Sofrosyne ikon" class="h-6 mr-2" style="height: 3.5em;">
+                    <span class="text-teal-700 font-bold text-2xl" style="font-family: 'Cinzel', serif;">Sofrosyne</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="personer.html" aria-current="page">Personer</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="ordliste.html">Ordliste</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="mb-10 text-center">
+            <h1 class="text-5xl font-bold text-teal-600 mb-5 animate-fadeIn">Tidslinje</h1>
+            <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                De vigtigste skikkelser i den græske antik – fra Homers episke digte til Plutarchs biografier.
+                Hold markøren over en person for en kort introduktion, eller klik for at læse mere.
+            </p>
+        </section>
+
+        <div class="timeline-legend">
+            <span class="tl-badge tl-filosof">Filosof</span>
+            <span class="tl-badge tl-digter">Digter</span>
+            <span class="tl-badge tl-dramatiker">Dramatiker</span>
+            <span class="tl-badge tl-historiker">Historiker</span>
+            <span class="tl-badge tl-statsmand">Statsmand</span>
+            <span class="tl-badge tl-laege">Læge</span>
+            <span class="tl-badge tl-matematiker">Matematiker</span>
+            <span class="tl-badge tl-taler">Taler</span>
+        </div>
+
+        <div class="timeline">
+
+            <!-- ═══ Arkaisk periode ═══ -->
+            <div class="timeline-era">
+                <span class="timeline-era-label">Arkaisk periode<small>ca. 800–500 f.Kr.</small></span>
+            </div>
+
+            <!-- 1 · Homer -->
+            <div class="timeline-item">
+                <a href="personer/homer.html" class="timeline-card">
+                    <span class="tl-badge tl-digter">Digter</span>
+                    <h3>Homer</h3>
+                    <span class="timeline-period">ca. 800 f.Kr.</span>
+                    <p class="timeline-desc">Forfatteren bag Iliaden og Odysseen – de to episke digte, der grundlagde hele den vestlige litterære tradition og formede grækernes verdensbillede i århundreder.</p>
+                </a>
+            </div>
+
+            <!-- 2 · Hesiod -->
+            <div class="timeline-item tl-right">
+                <a href="personer/hesiod.html" class="timeline-card">
+                    <span class="tl-badge tl-digter">Digter</span>
+                    <h3>Hesiod</h3>
+                    <span class="timeline-period">ca. 700 f.Kr.</span>
+                    <p class="timeline-desc">Digter bag Theogonien og Værker og Dage. Systematiserede de græske myter om gudernes oprindelse og beskrev bondelivets vilkår med moralsk alvor.</p>
+                </a>
+            </div>
+
+            <!-- 3 · Sappho -->
+            <div class="timeline-item">
+                <a href="personer/sappho.html" class="timeline-card">
+                    <span class="tl-badge tl-digter">Digter</span>
+                    <h3>Sappho</h3>
+                    <span class="timeline-period">ca. 630–570 f.Kr.</span>
+                    <p class="timeline-desc">Lyrisk digter fra Lesbos, berømt for sine intense og personlige kærlighedsdigte. Blev i antikken kaldt "den tiende muse" for sin poetiske mestring.</p>
+                </a>
+            </div>
+
+            <!-- 4 · Thales -->
+            <div class="timeline-item tl-right">
+                <a href="personer/thales.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Thales</h3>
+                    <span class="timeline-period">ca. 624–546 f.Kr.</span>
+                    <p class="timeline-desc">Regnes for den første vestlige filosof. Foreslog at vand er alstof og søgte naturlige forklaringer på naturfænomener frem for mytologiske.</p>
+                </a>
+            </div>
+
+            <!-- 5 · Pythagoras -->
+            <div class="timeline-item">
+                <a href="personer/pythagoras.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Pythagoras</h3>
+                    <span class="timeline-period">ca. 570–495 f.Kr.</span>
+                    <p class="timeline-desc">Grundlagde en filosofisk skole, der forbandt matematik, musik og kosmologi. Mest kendt for den pythagoræiske læresætning og idéen om sfærernes harmoni.</p>
+                </a>
+            </div>
+
+            <!-- 6 · Heraklit -->
+            <div class="timeline-item tl-right">
+                <a href="personer/heraklit.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Heraklit</h3>
+                    <span class="timeline-period">ca. 535–475 f.Kr.</span>
+                    <p class="timeline-desc">Filosof fra Efesos, kendt for idéen om evig forandring – "alt flyder" – og logos som universets ordnende princip bag modsætningernes samspil.</p>
+                </a>
+            </div>
+
+            <!-- ═══ Klassisk periode ═══ -->
+            <div class="timeline-era">
+                <span class="timeline-era-label">Klassisk periode<small>ca. 500–323 f.Kr.</small></span>
+            </div>
+
+            <!-- 7 · Aischylos -->
+            <div class="timeline-item">
+                <a href="personer/aischylos.html" class="timeline-card">
+                    <span class="tl-badge tl-dramatiker">Dramatiker</span>
+                    <h3>Aischylos</h3>
+                    <span class="timeline-period">ca. 525–456 f.Kr.</span>
+                    <p class="timeline-desc">Tragediens fader. Indførte den anden skuespiller og skabte den dramatiske dialog. Orestien er hans hovedværk og den eneste bevarede trilogi fra antikken.</p>
+                </a>
+            </div>
+
+            <!-- 8 · Pindar -->
+            <div class="timeline-item tl-right">
+                <a href="personer/pindar.html" class="timeline-card">
+                    <span class="tl-badge tl-digter">Digter</span>
+                    <h3>Pindar</h3>
+                    <span class="timeline-period">ca. 518–438 f.Kr.</span>
+                    <p class="timeline-desc">Antikkens største lyriske digter, berømt for sine sejrshymner til vindere ved de olympiske og andre panhelleniske lege. Billedrig og musikalsk stil.</p>
+                </a>
+            </div>
+
+            <!-- 9 · Sofokles -->
+            <div class="timeline-item">
+                <a href="personer/sofokles.html" class="timeline-card">
+                    <span class="tl-badge tl-dramatiker">Dramatiker</span>
+                    <h3>Sofokles</h3>
+                    <span class="timeline-period">ca. 496–406 f.Kr.</span>
+                    <p class="timeline-desc">Perfektionerede tragedien og tilføjede den tredje skuespiller. Kong Ødipus og Antigone er blandt verdenslitteraturens mest indflydelsesrige dramaer.</p>
+                </a>
+            </div>
+
+            <!-- 10 · Perikles -->
+            <div class="timeline-item tl-right">
+                <a href="personer/perikles.html" class="timeline-card">
+                    <span class="tl-badge tl-statsmand">Statsmand</span>
+                    <h3>Perikles</h3>
+                    <span class="timeline-period">ca. 495–429 f.Kr.</span>
+                    <p class="timeline-desc">Athens ledende statsmand i bystatens guldalder. Styrkede demokratiet, igangsatte opførelsen af Parthenon og samlede byens intellektuelle elite.</p>
+                </a>
+            </div>
+
+            <!-- 11 · Herodot -->
+            <div class="timeline-item">
+                <a href="personer/herodot.html" class="timeline-card">
+                    <span class="tl-badge tl-historiker">Historiker</span>
+                    <h3>Herodot</h3>
+                    <span class="timeline-period">ca. 484–425 f.Kr.</span>
+                    <p class="timeline-desc">"Historiens fader." Skrev det første store historieværk om perserkrigene og beskrev kultur og skikke fra hele den antikke verden.</p>
+                </a>
+            </div>
+
+            <!-- 12 · Euripides -->
+            <div class="timeline-item tl-right">
+                <a href="personer/euripides.html" class="timeline-card">
+                    <span class="tl-badge tl-dramatiker">Dramatiker</span>
+                    <h3>Euripides</h3>
+                    <span class="timeline-period">ca. 480–406 f.Kr.</span>
+                    <p class="timeline-desc">Bragte realistiske menneskeskildringer til tragedien. Medea og Bakkhanterne viser hans psykologiske dybde og mod til at udfordre konventioner.</p>
+                </a>
+            </div>
+
+            <!-- 13 · Sokrates -->
+            <div class="timeline-item">
+                <a href="personer/sokrates.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Sokrates</h3>
+                    <span class="timeline-period">ca. 470–399 f.Kr.</span>
+                    <p class="timeline-desc">Filosofiens grundfigur i Vesten. Underviste gennem spørgsmål (den sokratiske metode) og insisterede på selvransagelse som vejen til visdom.</p>
+                </a>
+            </div>
+
+            <!-- 14 · Thukydid -->
+            <div class="timeline-item tl-right">
+                <a href="personer/thukydid.html" class="timeline-card">
+                    <span class="tl-badge tl-historiker">Historiker</span>
+                    <h3>Thukydid</h3>
+                    <span class="timeline-period">ca. 460–400 f.Kr.</span>
+                    <p class="timeline-desc">Forfatteren bag Den Peloponnesiske Krig. Grundlagde kritisk historieskrivning baseret på evidens, rationel analyse og realistisk magtforståelse.</p>
+                </a>
+            </div>
+
+            <!-- 15 · Demokrit -->
+            <div class="timeline-item">
+                <a href="personer/demokrit.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Demokrit</h3>
+                    <span class="timeline-period">ca. 460–370 f.Kr.</span>
+                    <p class="timeline-desc">Udviklede atomteorien: alle ting består af udelelige partikler i bevægelse gennem tomrum. En af antikkens mest fremsynede og systematiske tænkere.</p>
+                </a>
+            </div>
+
+            <!-- 16 · Hippokrates -->
+            <div class="timeline-item tl-right">
+                <a href="personer/hippokrates.html" class="timeline-card">
+                    <span class="tl-badge tl-laege">Læge</span>
+                    <h3>Hippokrates</h3>
+                    <span class="timeline-period">ca. 460–370 f.Kr.</span>
+                    <p class="timeline-desc">"Lægernes fader." Adskilte medicinen fra overtro og grundlagde klinisk observation. Hippokrates' ed bærer stadig hans navn og former lægeetikken.</p>
+                </a>
+            </div>
+
+            <!-- 17 · Aristofanes -->
+            <div class="timeline-item">
+                <a href="personer/aristofanes.html" class="timeline-card">
+                    <span class="tl-badge tl-dramatiker">Dramatiker</span>
+                    <h3>Aristofanes</h3>
+                    <span class="timeline-period">ca. 446–386 f.Kr.</span>
+                    <p class="timeline-desc">Oldkomediens mester. Hans skarpe politiske satirer – bl.a. Skyerne og Lysistrata – er de eneste bevarede komedier fra den klassiske periode.</p>
+                </a>
+            </div>
+
+            <!-- 18 · Platon -->
+            <div class="timeline-item tl-right">
+                <a href="personer/platon.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Platon</h3>
+                    <span class="timeline-period">ca. 428–348 f.Kr.</span>
+                    <p class="timeline-desc">Sokrates' elev og grundlægger af Akademiet. Hans idélære og dialoger har formet vestlig filosofi, politik og erkendelseslære i over to årtusinder.</p>
+                </a>
+            </div>
+
+            <!-- 19 · Aristoteles -->
+            <div class="timeline-item">
+                <a href="personer/aristoteles.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Aristoteles</h3>
+                    <span class="timeline-period">384–322 f.Kr.</span>
+                    <p class="timeline-desc">Platons elev og Alexanders lærer. Systematiserede logik, etik, politik, biologi og poetik. Vestens mest indflydelsesrige tænker.</p>
+                </a>
+            </div>
+
+            <!-- 20 · Demosthenes -->
+            <div class="timeline-item tl-right">
+                <a href="personer/demosthenes.html" class="timeline-card">
+                    <span class="tl-badge tl-taler">Taler</span>
+                    <h3>Demosthenes</h3>
+                    <span class="timeline-period">384–322 f.Kr.</span>
+                    <p class="timeline-desc">Antikkens største taler. Hans filippiske taler advarede Athen mod Makedoniens fremmarch og satte standarden for politisk retorik.</p>
+                </a>
+            </div>
+
+            <!-- ═══ Hellenistisk og romersk periode ═══ -->
+            <div class="timeline-era">
+                <span class="timeline-era-label">Hellenistisk &amp; romersk periode<small>323 f.Kr. – 120 e.Kr.</small></span>
+            </div>
+
+            <!-- 21 · Epikur -->
+            <div class="timeline-item">
+                <a href="personer/epikur.html" class="timeline-card">
+                    <span class="tl-badge tl-filosof">Filosof</span>
+                    <h3>Epikur</h3>
+                    <span class="timeline-period">341–270 f.Kr.</span>
+                    <p class="timeline-desc">Grundlagde epikuræismen, der sætter sjælero (ataraxia) som livets mål. Lærte at lykke opnås gennem mådehold og venskab, ikke overdrivelse.</p>
+                </a>
+            </div>
+
+            <!-- 22 · Archimedes -->
+            <div class="timeline-item tl-right">
+                <a href="personer/archimedes.html" class="timeline-card">
+                    <span class="tl-badge tl-matematiker">Matematiker</span>
+                    <h3>Archimedes</h3>
+                    <span class="timeline-period">ca. 287–212 f.Kr.</span>
+                    <p class="timeline-desc">Antikkens største matematiker og opfinder. Opdagede opdriftsprincippet, beregnede pi med hidtil uset præcision og opfandt geniale mekanismer.</p>
+                </a>
+            </div>
+
+            <!-- 23 · Plutarch -->
+            <div class="timeline-item">
+                <a href="personer/plutarch.html" class="timeline-card">
+                    <span class="tl-badge tl-historiker">Historiker</span>
+                    <h3>Plutarch</h3>
+                    <span class="timeline-period">ca. 46–120 e.Kr.</span>
+                    <p class="timeline-desc">Forfatter til Parallelle Liv, der sammenligner berømte græske og romerske skikkelser. En uvurderlig kilde til antikkens historie og moralfilosofi.</p>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

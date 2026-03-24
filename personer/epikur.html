@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Epikur – Sofrosyne</title>
+    <link rel="icon" href="../images/sofrosyne_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/sofrosyne_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@700&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <script src="../theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../images/sofrosyne_icon.png" alt="Sofrosyne ikon" class="h-6 mr-2" style="height: 3.5em;">
+                    <span class="text-teal-700 font-bold text-2xl" style="font-family: 'Cinzel', serif;">Sofrosyne</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../index.html">Forside</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../historie.html">Historie</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../personer.html">Personer</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../citatbibliotek.html">Citatbibliotek</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../ordliste.html">Ordliste</a></li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <a href="../personer.html" class="person-back">← Tilbage til tidslinjen</a>
+
+        <article class="card person-article">
+            <div class="card-body">
+                <span class="tl-badge tl-filosof">Filosof</span>
+                <h1>Epikur</h1>
+                <span class="person-period">341–270 f.Kr.</span>
+
+                <p>Epikur grundlagde en af antikkens store filosofiske skoler i sin have (Kepos) i Athen. Hans lære – epikuræismen – sætter lykke og sjælero (ataraxia) som livets højeste mål, opnået gennem mådehold, venskab og filosofisk refleksion.</p>
+
+                <p>I modsætning til den populære misforståelse handlede epikuræisme ikke om nydelsessyge. Epikur skelnede mellem nødvendige og unødvendige lyster og anbefalede et enkelt liv med gode venner og frihed fra frygt – herunder frygten for guderne og døden.</p>
+
+                <h2>Central lære</h2>
+                <p>"Døden angår os ikke," lærte han: når vi er, er den ikke; når den er, er vi ikke. Epikur byggede på Demokrits atomteori og mente, at alt – også sjælen – er sammensat af atomer, der opløses ved døden. Hans filosofi var dermed både materialistisk og trøstende: der er intet at frygte efter livet.</p>
+
+                <h2>Betydning og eftermæle</h2>
+                <p>Epikurs filosofi inspirerede Lukrets' store digt Om tingenes natur og påvirkede oplysningstidens tænkere som Gassendi og Hume. Hans have var usædvanlig ved at optage kvinder og slaver som ligeværdige medlemmer. I dag er hans fokus på mådehold, venskab og sindsro stadig bemærkelsesværdigt aktuelt.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2025 Sofrosyne.dk</footer>
+</body>
+</html>

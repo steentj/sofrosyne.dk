@@ -701,6 +701,75 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
   line-height: 1.65;
 }
 
+/* ── Værker (collapsible) ── */
+.person-article .vaerker-section {
+  margin-top: 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.person-article .vaerker-section > summary {
+  cursor: pointer;
+  padding: .85rem 1.1rem;
+  background: rgba(var(--brand-rgb)/.07);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--brand);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  user-select: none;
+}
+.person-article .vaerker-section > summary:hover { background: rgba(var(--brand-rgb)/.12); }
+.person-article .vaerker-section > summary::-webkit-details-marker { display: none; }
+.person-article .vaerker-section > summary::before {
+  content: '▶';
+  font-size: .65em;
+  transition: transform .25s ease;
+}
+.person-article .vaerker-section[open] > summary::before {
+  transform: rotate(90deg);
+}
+.person-article .vaerker-content {
+  padding: .25rem 1rem 0.5rem;
+}
+.person-article .vaerk {
+  border-bottom: 1px solid var(--border);
+}
+.person-article .vaerk:last-child { border-bottom: none; }
+.person-article .vaerk > summary {
+  cursor: pointer;
+  padding: .65rem .4rem;
+  font-weight: 600;
+  font-size: .97rem;
+  color: var(--heading);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  user-select: none;
+}
+.person-article .vaerk > summary:hover { color: var(--brand); }
+.person-article .vaerk > summary::-webkit-details-marker { display: none; }
+.person-article .vaerk > summary::before {
+  content: '▸';
+  font-size: .7em;
+  transition: transform .25s ease;
+  color: var(--brand);
+}
+.person-article .vaerk[open] > summary::before {
+  transform: rotate(90deg);
+}
+.person-article .vaerk p {
+  padding: 0 .4rem .75rem 1.25rem;
+  margin: 0;
+  font-size: .93rem;
+  line-height: 1.65;
+}
+[data-theme="dark"] .person-article .vaerker-section > summary { background: rgba(var(--brand-rgb)/.12); }
+[data-theme="dark"] .person-article .vaerker-section > summary:hover { background: rgba(var(--brand-rgb)/.18); }
+
 /* ── Timeline mobile ── */
 @media (max-width: 767px) {
   .timeline::before { left: 1.25rem; }

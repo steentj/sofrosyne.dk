@@ -111,7 +111,7 @@ header { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); backg
 
 /* Cards */
 .card { background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-xs); position:relative; overflow:hidden; }
-.card::before { content:""; position:absolute; inset:0; background: radial-gradient(circle at 25% 15%, rgba(var(--brand-rgb)/.06), transparent 70%); opacity:0; transition: opacity .6s ease; }
+.card::before { content:""; position:absolute; inset:0; background: radial-gradient(circle at 25% 15%, rgba(var(--brand-rgb)/.06), transparent 70%); opacity:0; transition: opacity .6s ease; pointer-events:none; }
 .card:hover::before { opacity:1; }
 .card:hover { box-shadow: var(--shadow-md); border-color: rgba(var(--brand-rgb)/.45); transform: translateY(-2px); }
 .card { transition: box-shadow var(--transition), transform .6s cubic-bezier(.22,.61,.36,1), border-color .5s ease; }

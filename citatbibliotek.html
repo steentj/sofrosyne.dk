@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Citatbibliotek – Sofrosyne</title>
+    <title>Citater – Sofrosyne</title>
     <link rel="icon" href="images/sofrosyne_icon.png" type="image/png">
     <link rel="apple-touch-icon" href="images/sofrosyne_icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,12 +25,22 @@
                 </div>
             </div>
             <div id="nav-links" class="hidden sm:flex items-center justify-end">
-                <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                                <ul class="flex flex-col sm:flex-row sm:space-x-6 sm:items-end space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
                     <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
-                    <li><a class="text-gray-700 hover:text-teal-600" href="historie.html">Historie</a></li>
-                    <li><a class="text-gray-700 hover:text-teal-600" href="personer.html">Personer</a></li>
-                    <li><a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html" aria-current="page">Citatbibliotek</a></li>
-                    <li><a class="text-gray-700 hover:text-teal-600" href="ordliste.html">Ordliste</a></li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Om sofrosyne</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="historie.html">Idéhistorie</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html" aria-current="page">Citater</a>
+                        </div>
+                    </li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Antikken</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="personer.html">Personer</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="ordliste.html">Begreber</a>
+                        </div>
+                    </li>
                     <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
                 </ul>
             </div>
@@ -38,7 +48,7 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-12">
-        <h1 class="text-5xl font-bold text-teal-600 mb-12 text-center animate-fadeIn">Citatbibliotek</h1>
+        <h1 class="text-5xl font-bold text-teal-600 mb-12 text-center animate-fadeIn">Citater</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <figure class="quote-figure bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-600">
                 <img src="images/plato.jpg" alt="Platon" loading="lazy" onerror="this.onerror=null;this.src='sofrosyne.jpg'" />

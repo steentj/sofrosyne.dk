@@ -1835,6 +1835,17 @@ const GLOSSARY_TERMS = [
       lex: null,
       sep: null
     }
+  },
+  {
+    greek: "ζῷον",
+    transliteration: "zōon",
+    danish: "levende væsen",
+    explanation: "Aristoteles' betegnelse for 'levende væsen' eller 'dyr'. Berømt i sammensætningen ζῷον πολιτικόν (det politiske dyr): mennesket er af naturen skabt til at leve i bystaten og søge det gode liv i fællesskab med andre.",
+    links: {
+      wiki: null,
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-politics/"
+    }
   }
 ];
 
@@ -1851,7 +1862,7 @@ const state = {
   sortDirection: "asc"
 };
 
-const baseRows = GLOSSARY_TERMS.slice(0, 100).map((item, index) => ({ ...item, index }));
+const baseRows = GLOSSARY_TERMS.slice(0, 101).map((item, index) => ({ ...item, index }));
 
 function normalizeText(value) {
   return value
@@ -1862,14 +1873,16 @@ function normalizeText(value) {
 }
 
 function sortRows(rows) {
-  const locale = state.sortKey === "greek" ? "el" : "da";
   const direction = state.sortDirection === "asc" ? 1 : -1;
+  // When sorting by the Greek column, use the transliteration (Latin alphabet)
+  // so the sort order is predictable for readers who don't read Greek script.
+  const key = state.sortKey === "greek" ? "transliteration" : state.sortKey;
 
   return [...rows].sort((a, b) => {
-    const first = a[state.sortKey];
-    const second = b[state.sortKey];
+    const first = a[key];
+    const second = b[key];
 
-    const result = first.localeCompare(second, locale, {
+    const result = first.localeCompare(second, "da", {
       sensitivity: "base"
     });
 

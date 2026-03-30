@@ -6,7 +6,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kernen i klassisk selvbeherskelse: lyst, følelse og fornuft holdes i en harmonisk orden.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sofrosyne",
-      lex: "https://lex.dk/s%C3%B8g?Query=sofrosyne"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/plato-ethics/"
     }
   },
   {
@@ -16,7 +17,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Platon og Aristoteles er arete den fremragende måde at udføre en funktion på.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dyd",
-      lex: "https://lex.dk/dyd"
+      lex: "https://lex.dk/dyd",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -26,7 +28,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den dømmekraft, der finder det rette i konkrete situationer frem for abstrakt teori alene.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Fronesis",
-      lex: "https://lex.dk/s%C3%B8g?Query=fronesis"
+      lex: "https://lex.dk/fronesis",
+      sep: "https://plato.stanford.edu/entries/practical-reason/"
     }
   },
   {
@@ -36,7 +39,8 @@ const GLOSSARY_TERMS = [
     explanation: "Visdom som indsigt i de højeste principper; ofte skilt fra praktisk dømmekraft.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Visdom",
-      lex: "https://lex.dk/visdom"
+      lex: "https://lex.dk/visdom",
+      sep: "https://plato.stanford.edu/entries/wisdom/"
     }
   },
   {
@@ -46,7 +50,8 @@ const GLOSSARY_TERMS = [
     explanation: "I Republikken bliver retfærdighed den orden, hvor hver del gør sit eget arbejde.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Retf%C3%A6rdighed",
-      lex: "https://lex.dk/retf%C3%A6rdighed"
+      lex: "https://lex.dk/retf%C3%A6rdighed",
+      sep: "https://plato.stanford.edu/entries/justice-virtue/"
     }
   },
   {
@@ -56,7 +61,8 @@ const GLOSSARY_TERMS = [
     explanation: "Mod er ikke dumdristighed, men standhaftighed over for frygt i det rette mål.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Mod",
-      lex: "https://lex.dk/mod"
+      lex: "https://lex.dk/mod",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -66,7 +72,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' mål for livet: at leve vel gennem dydig aktivitet over et helt liv.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Eudaimonia",
-      lex: "https://lex.dk/s%C3%B8g?Query=eudaimonia"
+      lex: "https://lex.dk/lykke",
+      sep: "https://plato.stanford.edu/entries/happiness/"
     }
   },
   {
@@ -76,7 +83,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sjælen forstås som livsprincip og som sæde for erkendelse, begær og karakter.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sj%C3%A6l",
-      lex: "https://lex.dk/sj%C3%A6l"
+      lex: "https://lex.dk/sj%C3%A6l",
+      sep: "https://plato.stanford.edu/entries/ancient-soul/"
     }
   },
   {
@@ -86,7 +94,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et nøgleord der spænder fra argument til verdensorden, afhængigt af forfatter og skole.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Logos",
-      lex: "https://lex.dk/logos"
+      lex: "https://lex.dk/logos",
+      sep: "https://plato.stanford.edu/entries/heraclitus/"
     }
   },
   {
@@ -96,7 +105,8 @@ const GLOSSARY_TERMS = [
     explanation: "Intellektet som evne til at gribe de første principper og det universelle.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Nous",
-      lex: "https://lex.dk/s%C3%B8g?Query=nous"
+      lex: "https://lex.dk/intellekt",
+      sep: "https://plato.stanford.edu/entries/aristotle-psychology/"
     }
   },
   {
@@ -106,7 +116,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sikker, begrundet viden om nødvendige sammenhænge, især i aristotelisk forstand.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Episteme",
-      lex: "https://lex.dk/s%C3%B8g?Query=episteme"
+      lex: "https://lex.dk/episteme",
+      sep: "https://plato.stanford.edu/entries/knowledge-analysis/"
     }
   },
   {
@@ -116,7 +127,8 @@ const GLOSSARY_TERMS = [
     explanation: "Mening kan være sand eller falsk, men mangler den faste begrundelse i episteme.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Doxa",
-      lex: "https://lex.dk/s%C3%B8g?Query=doxa"
+      lex: "https://lex.dk/doksa",
+      sep: "https://plato.stanford.edu/entries/plato-metaphysics/"
     }
   },
   {
@@ -126,7 +138,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sandhed som afdækning af det virkelige, både logisk og ontologisk forstået.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sandhed",
-      lex: "https://lex.dk/sandhed"
+      lex: "https://lex.dk/sandhed",
+      sep: "https://plato.stanford.edu/entries/truth/"
     }
   },
   {
@@ -136,7 +149,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kan betyde både tro, loyalitet og overbevisning i retoriske og filosofiske tekster.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tro",
-      lex: "https://lex.dk/tro"
+      lex: "https://lex.dk/tro",
+      sep: null
     }
   },
   {
@@ -146,7 +160,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Aristoteles en særskilt psykisk funktion, vigtig for erfaring og læring.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hukommelse",
-      lex: "https://lex.dk/hukommelse"
+      lex: "https://lex.dk/hukommelse",
+      sep: null
     }
   },
   {
@@ -156,7 +171,8 @@ const GLOSSARY_TERMS = [
     explanation: "Grundlaget for erfaring; hos Aristoteles indgangen til viden om det konkrete.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sansning",
-      lex: "https://lex.dk/sansning"
+      lex: "https://lex.dk/sansning",
+      sep: null
     }
   },
   {
@@ -166,7 +182,8 @@ const GLOSSARY_TERMS = [
     explanation: "Følelsesmæssig påvirkning, central i etik, retorik og tragedieteori.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Pathos",
-      lex: "https://lex.dk/pathos"
+      lex: "https://lex.dk/pathos",
+      sep: null
     }
   },
   {
@@ -176,7 +193,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Platon en drivkraft, der kan løftes fra sanselig længsel til erkendelse af det skønne.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Eros",
-      lex: "https://lex.dk/eros"
+      lex: "https://lex.dk/eros",
+      sep: "https://plato.stanford.edu/entries/love/"
     }
   },
   {
@@ -186,7 +204,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles ser venskab som en bærende social dyd og forudsætning for politisk fællesskab.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Venskab",
-      lex: "https://lex.dk/venskab"
+      lex: "https://lex.dk/venskab",
+      sep: "https://plato.stanford.edu/entries/friendship/"
     }
   },
   {
@@ -196,7 +215,8 @@ const GLOSSARY_TERMS = [
     explanation: "Begreb der især udvikles i senantikken, men bygger videre på græske kærlighedsbegreber.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Agape",
-      lex: "https://lex.dk/s%C3%B8g?Query=agape"
+      lex: "https://lex.dk/agape",
+      sep: null
     }
   },
   {
@@ -206,7 +226,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et centralt diskussionsemne i etik: om nydelse er mål, middel eller ledsagefænomen.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Nydelse",
-      lex: "https://lex.dk/nydelse"
+      lex: "https://lex.dk/nydelse",
+      sep: "https://plato.stanford.edu/entries/pleasure/"
     }
   },
   {
@@ -216,7 +237,8 @@ const GLOSSARY_TERMS = [
     explanation: "Modpol til nydelse i flere etiske analyser af menneskets motivation.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sorg",
-      lex: "https://lex.dk/sorg"
+      lex: "https://lex.dk/sorg",
+      sep: null
     }
   },
   {
@@ -226,7 +248,8 @@ const GLOSSARY_TERMS = [
     explanation: "I retorik en påvirkelig affekt; i etik et felt hvor modet trænes.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Frygt",
-      lex: "https://lex.dk/frygt"
+      lex: "https://lex.dk/frygt",
+      sep: "https://plato.stanford.edu/entries/emotion/"
     }
   },
   {
@@ -236,7 +259,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles analyserer vrede som en socialt struktureret affekt med bestemte udløsere.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Vrede",
-      lex: "https://lex.dk/vrede"
+      lex: "https://lex.dk/vrede",
+      sep: null
     }
   },
   {
@@ -246,7 +270,8 @@ const GLOSSARY_TERMS = [
     explanation: "Begærets styring er et omdrejningspunkt for både platonsk og stoisk etik.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Beg%C3%A6r",
-      lex: "https://lex.dk/beg%C3%A6r"
+      lex: "https://lex.dk/beg%C3%A6r",
+      sep: "https://plato.stanford.edu/entries/desire/"
     }
   },
   {
@@ -256,7 +281,8 @@ const GLOSSARY_TERMS = [
     explanation: "Viljen retter sig mod det, der fremtræder som godt, men kan formes af karakter.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=vilje"
+      lex: "https://lex.dk/vilje",
+      sep: "https://plato.stanford.edu/entries/desire/"
     }
   },
   {
@@ -266,7 +292,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Aristoteles det ansvarsbærende valg efter overvejelse af midler og mål.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Prohairesis",
-      lex: "https://lex.dk/s%C3%B8g?Query=prohairesis"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/action/"
     }
   },
   {
@@ -276,7 +303,8 @@ const GLOSSARY_TERMS = [
     explanation: "Bruges om forskellige måder at leve på, fx det kontemplative eller politiske liv.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Bios",
-      lex: "https://lex.dk/s%C3%B8g?Query=bios"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -286,7 +314,8 @@ const GLOSSARY_TERMS = [
     explanation: "Natur som indre princip for bevægelse og udvikling, ikke kun ydre omgivelser.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Fyse",
-      lex: "https://lex.dk/fyse"
+      lex: "https://lex.dk/fyse",
+      sep: "https://plato.stanford.edu/entries/aristotle-biology/"
     }
   },
   {
@@ -296,7 +325,8 @@ const GLOSSARY_TERMS = [
     explanation: "Spændingen mellem natur og lov er et nøglespor i sofistik, politik og tragedie.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Nomos",
-      lex: "https://lex.dk/s%C3%B8g?Query=nomos"
+      lex: "https://lex.dk/lov",
+      sep: null
     }
   },
   {
@@ -306,7 +336,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den klassiske politiske ramme, hvor etik, uddannelse og lov tænkes sammen.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Polis",
-      lex: "https://lex.dk/polis"
+      lex: "https://lex.dk/polis",
+      sep: "https://plato.stanford.edu/entries/ancient-political/"
     }
   },
   {
@@ -316,7 +347,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kan betyde både konstitution, borgerstatus og den overordnede politiske orden.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Politeia",
-      lex: "https://lex.dk/s%C3%B8g?Query=politeia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/ancient-political/"
     }
   },
   {
@@ -326,7 +358,8 @@ const GLOSSARY_TERMS = [
     explanation: "Borgeren defineres i antikken gennem deltagelse i dom, råd og offentlige embeder.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Borger",
-      lex: "https://lex.dk/borger"
+      lex: "https://lex.dk/borger",
+      sep: null
     }
   },
   {
@@ -336,7 +369,8 @@ const GLOSSARY_TERMS = [
     explanation: "Folkestyre i klassisk forstand, men med andre institutioner end moderne repræsentation.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Demokrati",
-      lex: "https://lex.dk/demokrati"
+      lex: "https://lex.dk/demokrati",
+      sep: "https://plato.stanford.edu/entries/democracy/"
     }
   },
   {
@@ -346,7 +380,8 @@ const GLOSSARY_TERMS = [
     explanation: "Styreform hvor få besidder magten, ofte begrundet med ejendom og social rang.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Oligarki",
-      lex: "https://lex.dk/oligarki"
+      lex: "https://lex.dk/oligarki",
+      sep: null
     }
   },
   {
@@ -356,7 +391,8 @@ const GLOSSARY_TERMS = [
     explanation: "Enevælde uden legitim forankring; et centralt advarselsmotiv hos både historikere og filosoffer.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tyranni",
-      lex: "https://lex.dk/tyranni"
+      lex: "https://lex.dk/tyranni",
+      sep: null
     }
   },
   {
@@ -366,7 +402,8 @@ const GLOSSARY_TERMS = [
     explanation: "Énmandsstyre, i antikken diskuteret både som legitim ordning og risiko for forfald.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Monarki",
-      lex: "https://lex.dk/monarki"
+      lex: "https://lex.dk/monarki",
+      sep: null
     }
   },
   {
@@ -376,7 +413,8 @@ const GLOSSARY_TERMS = [
     explanation: "Styret af de bedste i dyd eller dannelse, i klassisk teori en idealiseret forfatningsform.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Aristokrati",
-      lex: "https://lex.dk/aristokrati"
+      lex: "https://lex.dk/aristokrati",
+      sep: null
     }
   },
   {
@@ -386,7 +424,8 @@ const GLOSSARY_TERMS = [
     explanation: "Tidligt politisk ideal om at loven gælder lige for frie borgere.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Isonomi",
-      lex: "https://lex.dk/s%C3%B8g?Query=isonomia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -396,7 +435,8 @@ const GLOSSARY_TERMS = [
     explanation: "Modet til at tale sandt i det offentlige rum, også når det koster socialt.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Parrhesia",
-      lex: "https://lex.dk/s%C3%B8g?Query=parrhesia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -406,7 +446,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Aristoteles både moralsk karakter og den troværdighed taleren udstråler.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Etos",
-      lex: "https://lex.dk/etos"
+      lex: "https://lex.dk/etos",
+      sep: "https://plato.stanford.edu/entries/moral-character/"
     }
   },
   {
@@ -416,7 +457,8 @@ const GLOSSARY_TERMS = [
     explanation: "Gentaget praksis former karakteren; derfor er etikken tæt forbundet med opdragelse.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=vane"
+      lex: "https://lex.dk/vane",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -426,7 +468,8 @@ const GLOSSARY_TERMS = [
     explanation: "En stabil tillært tilbøjelighed, der gør bestemte handlinger lettere og mere naturlige.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Heksis",
-      lex: "https://lex.dk/s%C3%B8g?Query=hexis"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -436,7 +479,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' idé om dyd som den passende midte mellem overskud og mangel.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Den_gyldne_middelvej",
-      lex: "https://lex.dk/gyldne_middelvej"
+      lex: "https://lex.dk/gyldne_middelvej",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -446,7 +490,8 @@ const GLOSSARY_TERMS = [
     explanation: "Alt forstås gennem sit formål; teleologi er bærende i aristotelisk naturfilosofi.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Telos",
-      lex: "https://lex.dk/s%C3%B8g?Query=telos"
+      lex: "https://lex.dk/form%C3%A5l",
+      sep: "https://plato.stanford.edu/entries/teleology-biology/"
     }
   },
   {
@@ -456,7 +501,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' fire årsager er fire forklaringsmåder, ikke kun lineær fysisk kausalitet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Aristoteles%27_fire_%C3%A5rsager",
-      lex: "https://lex.dk/s%C3%B8g?Query=four%20causes"
+      lex: "https://lex.dk/%C3%A5rsag",
+      sep: "https://plato.stanford.edu/entries/aristotle-causality/"
     }
   },
   {
@@ -466,7 +512,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det, der eksisterer i sig selv, og som bærer egenskaber og forandringer.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Ousia",
-      lex: "https://lex.dk/substans"
+      lex: "https://lex.dk/substans",
+      sep: "https://plato.stanford.edu/entries/substance/"
     }
   },
   {
@@ -476,7 +523,8 @@ const GLOSSARY_TERMS = [
     explanation: "En egenskab der kan ændres uden at tingens grundlæggende væsen ophører.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=accidens"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -486,7 +534,8 @@ const GLOSSARY_TERMS = [
     explanation: "Materie som mulighedsbærer, der får form gennem struktur og funktion.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hyle",
-      lex: "https://lex.dk/materie"
+      lex: "https://lex.dk/materie",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -496,7 +545,8 @@ const GLOSSARY_TERMS = [
     explanation: "Formen gør en ting til netop den slags ting, den er.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Form_(filosofi)",
-      lex: "https://lex.dk/form"
+      lex: "https://lex.dk/form",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -506,7 +556,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det fuldt udfoldede virke i modsætning til blot mulighed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Energeia",
-      lex: "https://lex.dk/s%C3%B8g?Query=energeia"
+      lex: "https://lex.dk/energeia",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -516,7 +567,8 @@ const GLOSSARY_TERMS = [
     explanation: "Evnen til at kunne blive eller gøre noget, før det aktualiseres.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dynamis",
-      lex: "https://lex.dk/s%C3%B8g?Query=dynamis"
+      lex: "https://lex.dk/dynamis",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -526,7 +578,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Aristoteles enhver overgang fra potentiale til aktualitet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Kinesis",
-      lex: "https://lex.dk/bev%C3%A6gelse"
+      lex: "https://lex.dk/bev%C3%A6gelse",
+      sep: "https://plato.stanford.edu/entries/change/"
     }
   },
   {
@@ -536,7 +589,8 @@ const GLOSSARY_TERMS = [
     explanation: "Begrebet for opkomst og dannelse, ofte sat op imod det varigt værende.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Genesis",
-      lex: "https://lex.dk/tilblivelse"
+      lex: "https://lex.dk/tilblivelse",
+      sep: null
     }
   },
   {
@@ -546,7 +600,8 @@ const GLOSSARY_TERMS = [
     explanation: "Modstykket til tilblivelse: den proces hvor noget ophører med at være det, det var.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=forfald"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -556,7 +611,8 @@ const GLOSSARY_TERMS = [
     explanation: "Tid behandles både kosmologisk, fysisk og eksistentielt i antikkens traditioner.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tid",
-      lex: "https://lex.dk/tid"
+      lex: "https://lex.dk/tid",
+      sep: null
     }
   },
   {
@@ -566,7 +622,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles analyserer sted som den nærmeste omsluttende grænse for en krop.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Topos",
-      lex: "https://lex.dk/s%C3%B8g?Query=topos"
+      lex: "https://lex.dk/topos",
+      sep: null
     }
   },
   {
@@ -576,7 +633,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos de tidlige naturfilosoffer et grundprincip uden fast afgrænsning.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Apeiron",
-      lex: "https://lex.dk/s%C3%B8g?Query=apeiron"
+      lex: "https://lex.dk/apeiron",
+      sep: null
     }
   },
   {
@@ -586,7 +644,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det, der giver form og mål; vigtigt i pythagoræisk og platonsk tænkning.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=peras"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -596,7 +655,8 @@ const GLOSSARY_TERMS = [
     explanation: "Grundbegreb i naturfilosofien: hvad alt udspringer af eller styres af.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Arche",
-      lex: "https://lex.dk/s%C3%B8g?Query=arche"
+      lex: "https://lex.dk/arche",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -606,7 +666,8 @@ const GLOSSARY_TERMS = [
     explanation: "De grundbestanddele hvoraf komplekse ting menes opbygget.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Klassisk_element",
-      lex: "https://lex.dk/element"
+      lex: "https://lex.dk/element",
+      sep: null
     }
   },
   {
@@ -616,7 +677,8 @@ const GLOSSARY_TERMS = [
     explanation: "Verden forstået som kosmos antyder orden, proportion og intelligibel struktur.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Kosmos",
-      lex: "https://lex.dk/kosmos"
+      lex: "https://lex.dk/kosmos",
+      sep: "https://plato.stanford.edu/entries/plato-timaeus/"
     }
   },
   {
@@ -626,7 +688,8 @@ const GLOSSARY_TERMS = [
     explanation: "I tidlig græsk tænkning ikke kun uorden, men et urtomt åbent rum.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Kaos",
-      lex: "https://lex.dk/kaos"
+      lex: "https://lex.dk/kaos",
+      sep: null
     }
   },
   {
@@ -636,7 +699,8 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Platon de intelligible former, som sanselige ting kun deltager i.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Id%C3%A9l%C3%A6re",
-      lex: "https://lex.dk/id%C3%A9"
+      lex: "https://lex.dk/id%C3%A9",
+      sep: "https://plato.stanford.edu/entries/plato-metaphysics/"
     }
   },
   {
@@ -646,7 +710,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kan betyde synlig skikkelse eller begrebslig form, afhængigt af konteksten.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Eidos",
-      lex: "https://lex.dk/s%C3%B8g?Query=eidos"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/plato-metaphysics/"
     }
   },
   {
@@ -656,7 +721,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kernen i ontologi: hvad det vil sige at være, og i hvilke betydninger.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Ontologi",
-      lex: "https://lex.dk/ontologi"
+      lex: "https://lex.dk/ontologi",
+      sep: "https://plato.stanford.edu/entries/aristotle-metaphysics/"
     }
   },
   {
@@ -666,7 +732,8 @@ const GLOSSARY_TERMS = [
     explanation: "Nøglebegreb i kunstteori: hvordan digtning og drama afbilder handling og karakter.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Mimesis",
-      lex: "https://lex.dk/s%C3%B8g?Query=mimesis"
+      lex: "https://lex.dk/mimesis",
+      sep: "https://plato.stanford.edu/entries/plato-aesthetics/"
     }
   },
   {
@@ -676,7 +743,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' tragediebegreb: følelsesbearbejdning gennem frygt og medlidenhed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Katharsis",
-      lex: "https://lex.dk/katharsis"
+      lex: "https://lex.dk/katharsis",
+      sep: "https://plato.stanford.edu/entries/aristotle-aesthetics/"
     }
   },
   {
@@ -686,7 +754,8 @@ const GLOSSARY_TERMS = [
     explanation: "Dramatisk form der undersøger skyld, skæbne og handlingens uforudsigelige følger.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tragedie",
-      lex: "https://lex.dk/tragedie"
+      lex: "https://lex.dk/tragedie",
+      sep: "https://plato.stanford.edu/entries/aristotle-aesthetics/"
     }
   },
   {
@@ -696,7 +765,8 @@ const GLOSSARY_TERMS = [
     explanation: "Komedien tematiserer normer og magt gennem satire, inversion og social kritik.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Komedie",
-      lex: "https://lex.dk/komedie"
+      lex: "https://lex.dk/komedie",
+      sep: null
     }
   },
   {
@@ -706,7 +776,8 @@ const GLOSSARY_TERMS = [
     explanation: "Læren om overbevisning i tale, hvor ethos, logos og pathos kombineres.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Retorik",
-      lex: "https://lex.dk/retorik"
+      lex: "https://lex.dk/retorik",
+      sep: "https://plato.stanford.edu/entries/aristotle-rhetoric/"
     }
   },
   {
@@ -716,7 +787,8 @@ const GLOSSARY_TERMS = [
     explanation: "Samtalekunst og argumentationsmetode til at afprøve begreber og modsætninger.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dialektik",
-      lex: "https://lex.dk/dialektik"
+      lex: "https://lex.dk/dialektik",
+      sep: "https://plato.stanford.edu/entries/logic-ancient/"
     }
   },
   {
@@ -726,7 +798,8 @@ const GLOSSARY_TERMS = [
     explanation: "Formallæren om gyldige slutninger, systematiseret særligt i aristotelisk tradition.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Logik",
-      lex: "https://lex.dk/logik"
+      lex: "https://lex.dk/logik",
+      sep: "https://plato.stanford.edu/entries/aristotle-logic/"
     }
   },
   {
@@ -736,7 +809,8 @@ const GLOSSARY_TERMS = [
     explanation: "En streng argumentform, hvor konklusionen følger nødvendigt af første principper.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=demonstration"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-logic/"
     }
   },
   {
@@ -746,7 +820,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' grundstruktur for deduktiv argumentation.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Syllogisme",
-      lex: "https://lex.dk/syllogisme"
+      lex: "https://lex.dk/syllogisme",
+      sep: "https://plato.stanford.edu/entries/aristotle-logic/"
     }
   },
   {
@@ -756,7 +831,8 @@ const GLOSSARY_TERMS = [
     explanation: "Overgangen fra mange enkelttilfælde til en almen indsigt eller regel.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Induktion_(logik)",
-      lex: "https://lex.dk/induktion"
+      lex: "https://lex.dk/induktion",
+      sep: "https://plato.stanford.edu/entries/aristotle-logic/"
     }
   },
   {
@@ -766,7 +842,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sokratisk og aristotelisk teknik: begynd med problemet før løsningen.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Apori",
-      lex: "https://lex.dk/s%C3%B8g?Query=apori"
+      lex: "https://lex.dk/apori",
+      sep: "https://plato.stanford.edu/entries/socrates/"
     }
   },
   {
@@ -776,7 +853,8 @@ const GLOSSARY_TERMS = [
     explanation: "Forundringen udpeges som filosofiens begyndelse hos både Platon og Aristoteles.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Filosofi",
-      lex: "https://lex.dk/forundring"
+      lex: "https://lex.dk/forundring",
+      sep: null
     }
   },
   {
@@ -786,7 +864,8 @@ const GLOSSARY_TERMS = [
     explanation: "Oprindeligt aktiv undersøgelse; hos Thukydid bliver det metodisk historieskrivning.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Historiografi",
-      lex: "https://lex.dk/historiografi"
+      lex: "https://lex.dk/historiografi",
+      sep: null
     }
   },
   {
@@ -796,7 +875,8 @@ const GLOSSARY_TERMS = [
     explanation: "Krig analyseres i antikken både strategisk, etisk og antropologisk.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Krig",
-      lex: "https://lex.dk/krig"
+      lex: "https://lex.dk/krig",
+      sep: null
     }
   },
   {
@@ -806,7 +886,8 @@ const GLOSSARY_TERMS = [
     explanation: "Fred opfattes som mere end fravær af krig: en orden med ret og stabilitet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Fred",
-      lex: "https://lex.dk/fred"
+      lex: "https://lex.dk/fred",
+      sep: null
     }
   },
   {
@@ -816,7 +897,8 @@ const GLOSSARY_TERMS = [
     explanation: "Thukydids analyser af stasis viser, hvordan sprog og normer kollapser i kriser.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Thukydid",
-      lex: "https://lex.dk/s%C3%B8g?Query=stasis"
+      lex: "https://lex.dk/stasis",
+      sep: null
     }
   },
   {
@@ -826,7 +908,8 @@ const GLOSSARY_TERMS = [
     explanation: "I græsk politik et nøglebegreb for magtbalance mellem bystater.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Alliance",
-      lex: "https://lex.dk/alliance"
+      lex: "https://lex.dk/alliance",
+      sep: null
     }
   },
   {
@@ -836,7 +919,8 @@ const GLOSSARY_TERMS = [
     explanation: "Athens imperialmagt byggede i høj grad på flådekapacitet og havkontrol.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Fl%C3%A5de",
-      lex: "https://lex.dk/fl%C3%A5de"
+      lex: "https://lex.dk/fl%C3%A5de",
+      sep: null
     }
   },
   {
@@ -846,7 +930,8 @@ const GLOSSARY_TERMS = [
     explanation: "Medicinen bruges ofte som analogi for etisk og politisk behandling af fællesskabet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/L%C3%A6gekunst",
-      lex: "https://lex.dk/l%C3%A6gekunst"
+      lex: "https://lex.dk/l%C3%A6gekunst",
+      sep: null
     }
   },
   {
@@ -856,7 +941,8 @@ const GLOSSARY_TERMS = [
     explanation: "Tekhne er regelbundet kunnen med et formål, ikke blot spontan dygtighed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tekhne",
-      lex: "https://lex.dk/teknik"
+      lex: "https://lex.dk/teknik",
+      sep: null
     }
   },
   {
@@ -866,7 +952,8 @@ const GLOSSARY_TERMS = [
     explanation: "Helhedsorienteret formning af karakter, smag og dømmekraft i bystatens kultur.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Paideia",
-      lex: "https://lex.dk/s%C3%B8g?Query=paideia"
+      lex: "https://lex.dk/paideia",
+      sep: null
     }
   },
   {
@@ -876,7 +963,8 @@ const GLOSSARY_TERMS = [
     explanation: "Omfatter poesi, rytme og musik som karakterdannende praksis, ikke kun lydkunst.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Musik",
-      lex: "https://lex.dk/musik"
+      lex: "https://lex.dk/musik",
+      sep: null
     }
   },
   {
@@ -886,7 +974,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sammen med musik udgør gymnastik en klassisk dobbeltakse i opdragelsen.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Gymnastik",
-      lex: "https://lex.dk/gymnastik"
+      lex: "https://lex.dk/gymnastik",
+      sep: null
     }
   },
   {
@@ -896,7 +985,8 @@ const GLOSSARY_TERMS = [
     explanation: "Vedvarende træning af opmærksomhed og vane, især i stoisk og senere asketisk tradition.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Askese",
-      lex: "https://lex.dk/askese"
+      lex: "https://lex.dk/askese",
+      sep: null
     }
   },
   {
@@ -906,7 +996,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kan betyde både konkret sikkerhed og eksistentiel frelse, alt efter sammenhæng.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Frelse",
-      lex: "https://lex.dk/frelse"
+      lex: "https://lex.dk/frelse",
+      sep: null
     }
   },
   {
@@ -916,7 +1007,8 @@ const GLOSSARY_TERMS = [
     explanation: "Skæbne forstået som den tildelte andel i en større orden, især i tragedien.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Moirer",
-      lex: "https://lex.dk/s%C3%B8g?Query=moira"
+      lex: "https://lex.dk/moira",
+      sep: "https://plato.stanford.edu/entries/fatalism/"
     }
   },
   {
@@ -926,7 +1018,8 @@ const GLOSSARY_TERMS = [
     explanation: "Fortuna-dimensionen i handling: ikke alt kan planlægges eller kontrolleres.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tyche",
-      lex: "https://lex.dk/tilf%C3%A6ldighed"
+      lex: "https://lex.dk/tilf%C3%A6ldighed",
+      sep: null
     }
   },
   {
@@ -936,7 +1029,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det uafvendelige i natur, logik eller skæbne; en grænse for menneskelig frihed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Ananke",
-      lex: "https://lex.dk/n%C3%B8dvendighed"
+      lex: "https://lex.dk/n%C3%B8dvendighed",
+      sep: "https://plato.stanford.edu/entries/fatalism/"
     }
   },
   {
@@ -946,7 +1040,8 @@ const GLOSSARY_TERMS = [
     explanation: "I antikken knyttet til borgerstatus, selvstyre og fravær af herredømme.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Frihed",
-      lex: "https://lex.dk/frihed"
+      lex: "https://lex.dk/frihed",
+      sep: "https://plato.stanford.edu/entries/freedom-ancient/"
     }
   },
   {
@@ -956,7 +1051,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et socialt og politisk grundvilkår i antikken, der udfordrer idealet om frihed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Slaveri",
-      lex: "https://lex.dk/slaveri"
+      lex: "https://lex.dk/slaveri",
+      sep: null
     }
   },
   {
@@ -966,7 +1062,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et ideal om at kunne stå i sig selv, personligt eller politisk.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Autarki",
-      lex: "https://lex.dk/autarki"
+      lex: "https://lex.dk/autarki",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -976,7 +1073,8 @@ const GLOSSARY_TERMS = [
     explanation: "Social deltagelse og deling af livsform; centralt i antikkens politiske antropologi.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/F%C3%A6llesskab",
-      lex: "https://lex.dk/f%C3%A6llesskab"
+      lex: "https://lex.dk/f%C3%A6llesskab",
+      sep: null
     }
   },
   {
@@ -986,7 +1084,8 @@ const GLOSSARY_TERMS = [
     explanation: "At skelne og dømme; i historiske tekster også vendepunkt eller kritisk situation.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Krise",
-      lex: "https://lex.dk/krise"
+      lex: "https://lex.dk/krise",
+      sep: null
     }
   },
   {
@@ -996,7 +1095,8 @@ const GLOSSARY_TERMS = [
     explanation: "Foreløbig opfattelse der styrer handling, men kræver kritisk afprøvning.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/antagelse"
+      lex: "https://lex.dk/antagelse",
+      sep: null
     }
   },
   {
@@ -1006,7 +1106,8 @@ const GLOSSARY_TERMS = [
     explanation: "Oprindeligt fri tid til fordybelse; roden bag ordet skole.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Skole",
-      lex: "https://lex.dk/skole"
+      lex: "https://lex.dk/skole",
+      sep: null
     }
   },
   {
@@ -1016,7 +1117,8 @@ const GLOSSARY_TERMS = [
     explanation: "Betragtende erkendelse af det universelle, ofte sat højere end rent nyttige aktiviteter.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Teori",
-      lex: "https://lex.dk/teori"
+      lex: "https://lex.dk/teori",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -1026,7 +1128,8 @@ const GLOSSARY_TERMS = [
     explanation: "Menneskelig handling, hvor målet ligger i selve udførelsen og dens kvalitet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Praxis",
-      lex: "https://lex.dk/praksis"
+      lex: "https://lex.dk/praksis",
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -1036,7 +1139,8 @@ const GLOSSARY_TERMS = [
     explanation: "Produktion hvor målet ligger i et ydre resultat, fx et værk eller redskab.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Poiesis",
-      lex: "https://lex.dk/s%C3%B8g?Query=poiesis"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-aesthetics/"
     }
   },
   {
@@ -1046,7 +1150,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' funktion-argument spørger hvad menneskets særlige opgave er.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Ergon-argument",
-      lex: "https://lex.dk/s%C3%B8g?Query=ergon"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
     }
   },
   {
@@ -1056,7 +1161,8 @@ const GLOSSARY_TERMS = [
     explanation: "Ordet dækker både æstetisk skønhed og moralsk værdighed i klassisk græsk.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sk%C3%B8nhed",
-      lex: "https://lex.dk/sk%C3%B8nhed"
+      lex: "https://lex.dk/sk%C3%B8nhed",
+      sep: "https://plato.stanford.edu/entries/beauty/"
     }
   },
   {
@@ -1066,7 +1172,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et vurderingsord der i etikken peger mod det efterstræbelsesværdige.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Det_gode",
-      lex: "https://lex.dk/det_gode"
+      lex: "https://lex.dk/det_gode",
+      sep: null
     }
   },
   {
@@ -1076,7 +1183,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det modsatte af dyd: en stabil dårlig disposition i handling og dømmekraft.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Last_(etik)",
-      lex: "https://lex.dk/last"
+      lex: "https://lex.dk/last",
+      sep: null
     }
   },
   {
@@ -1086,7 +1194,8 @@ const GLOSSARY_TERMS = [
     explanation: "Evnen til at handle rigtigt trods modstridende begær.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Enkrateia",
-      lex: "https://lex.dk/s%C3%B8g?Query=enkrateia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/weakness-will/"
     }
   },
   {
@@ -1096,7 +1205,8 @@ const GLOSSARY_TERMS = [
     explanation: "At vide hvad der er bedst, men alligevel handle imod bedre viden.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Akrasia",
-      lex: "https://lex.dk/s%C3%B8g?Query=akrasia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/weakness-will/"
     }
   },
   {
@@ -1106,7 +1216,8 @@ const GLOSSARY_TERMS = [
     explanation: "Stoisk term for den ledende del af sjælen, som skal holdes fri og klar.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=hegemonikon"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1116,7 +1227,8 @@ const GLOSSARY_TERMS = [
     explanation: "Stoisk idé om handlinger, der passer til rolle, relation og natur.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=kathekon"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/stoicism/"
     }
   },
   {
@@ -1126,7 +1238,8 @@ const GLOSSARY_TERMS = [
     explanation: "Stoisk teori om hvordan omsorg udvides fra selvet til familie og medborgere.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Oikeiosis",
-      lex: "https://lex.dk/s%C3%B8g?Query=oikeiosis"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1136,7 +1249,8 @@ const GLOSSARY_TERMS = [
     explanation: "Målet i flere hellenistiske skoler: et sind uden forstyrrende angst og tumult.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Ataraxia",
-      lex: "https://lex.dk/s%C3%B8g?Query=ataraxia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/epicurus/"
     }
   },
   {
@@ -1146,7 +1260,8 @@ const GLOSSARY_TERMS = [
     explanation: "Epikuræisk nøglebegreb for kropslig veltilstand som del af det gode liv.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Epikur%C3%A6isme",
-      lex: "https://lex.dk/s%C3%B8g?Query=aponia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1156,7 +1271,8 @@ const GLOSSARY_TERMS = [
     explanation: "Bruges om en højere lykketilstand, ofte med religiøse eller metafysiske overtoner.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=makaria"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1166,7 +1282,8 @@ const GLOSSARY_TERMS = [
     explanation: "Epikuræisk kritik af tomme begær og meninger uden naturligt grundlag.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=kenos"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1176,7 +1293,8 @@ const GLOSSARY_TERMS = [
     explanation: "Fastslået tese i en skoletradition; hos stoikere ofte med praktisk konsekvens.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dogme",
-      lex: "https://lex.dk/dogme"
+      lex: "https://lex.dk/dogme",
+      sep: null
     }
   },
   {
@@ -1186,7 +1304,8 @@ const GLOSSARY_TERMS = [
     explanation: "Henviser til den skeptiske tradition, hvor dom tilbageholdes for at opnå sindsro.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Skepticisme",
-      lex: "https://lex.dk/skepticisme"
+      lex: "https://lex.dk/skepticisme",
+      sep: null
     }
   },
   {
@@ -1196,7 +1315,8 @@ const GLOSSARY_TERMS = [
     explanation: "Skeptisk metode: udsæt dommen når lige stærke grunde taler for og imod.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Epokhe",
-      lex: "https://lex.dk/s%C3%B8g?Query=epokhe"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1206,7 +1326,8 @@ const GLOSSARY_TERMS = [
     explanation: "Indtryk eller forestilling i sjælen, som kan være mere eller mindre pålidelig.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Fantasi",
-      lex: "https://lex.dk/fantasi"
+      lex: "https://lex.dk/fantasi",
+      sep: null
     }
   },
   {
@@ -1216,7 +1337,8 @@ const GLOSSARY_TERMS = [
     explanation: "Stoisk begreb for når sindet giver samtykke til en forestilling som sand.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=synkatathesis"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1226,7 +1348,8 @@ const GLOSSARY_TERMS = [
     explanation: "Stoisk kriterium for et særligt overbevisende og sandheds-nært indtryk.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=kataleptisk"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1236,7 +1359,8 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles' grundmåder hvorpå noget kan siges at være.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Kategori_(filosofi)",
-      lex: "https://lex.dk/kategori"
+      lex: "https://lex.dk/kategori",
+      sep: null
     }
   },
   {
@@ -1246,7 +1370,8 @@ const GLOSSARY_TERMS = [
     explanation: "Logisk overbegreb der samler flere arter under en fælles ramme.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Genus",
-      lex: "https://lex.dk/genus"
+      lex: "https://lex.dk/genus",
+      sep: null
     }
   },
   {
@@ -1256,7 +1381,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den logiske undergruppe inden for et genus, defineret ved særlige kendetegn.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Species",
-      lex: "https://lex.dk/species"
+      lex: "https://lex.dk/species",
+      sep: null
     }
   },
   {
@@ -1266,7 +1392,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den differentierende egenskab, der adskiller en art fra andre i samme slægt.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/forskel"
+      lex: "https://lex.dk/forskel",
+      sep: null
     }
   },
   {
@@ -1276,7 +1403,8 @@ const GLOSSARY_TERMS = [
     explanation: "Definitionen søger at indfange et begrebs væsen og afgrænse det præcist.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Definition",
-      lex: "https://lex.dk/definition"
+      lex: "https://lex.dk/definition",
+      sep: null
     }
   },
   {
@@ -1286,7 +1414,8 @@ const GLOSSARY_TERMS = [
     explanation: "Retoriske og dialektiske mønstre, der hjælper med at finde argumenter.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Topik",
-      lex: "https://lex.dk/topik"
+      lex: "https://lex.dk/topik",
+      sep: null
     }
   },
   {
@@ -1296,7 +1425,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sokratisk praksis for at afprøve påstande gennem spørgsmål og selvmodsigelser.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Elenchus",
-      lex: "https://lex.dk/s%C3%B8g?Query=elenchos"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1306,7 +1436,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sokratisk metafor: læreren hjælper erkendelse frem i stedet for at levere færdige svar.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Maieutik",
-      lex: "https://lex.dk/s%C3%B8g?Query=maieutik"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1316,7 +1447,8 @@ const GLOSSARY_TERMS = [
     explanation: "I dialogen det punkt hvor samtalepartneren accepterer en præmis eller konsekvens.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=homologia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1326,7 +1458,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den højeste erkendelsesform i flere klassiske modeller, over sansning og mening.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Noesis",
-      lex: "https://lex.dk/s%C3%B8g?Query=noesis"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-psychology/"
     }
   },
   {
@@ -1336,7 +1469,8 @@ const GLOSSARY_TERMS = [
     explanation: "Trinvis tænkning med argumenter og mellemled, i modsætning til umiddelbar indsigt.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dianoia",
-      lex: "https://lex.dk/s%C3%B8g?Query=dianoia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-psychology/"
     }
   },
   {
@@ -1346,7 +1480,8 @@ const GLOSSARY_TERMS = [
     explanation: "Platons tanke om at læring kan forstås som gen-erindring af allerede kendt sandhed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Anamnese",
-      lex: "https://lex.dk/anamnese"
+      lex: "https://lex.dk/anamnese",
+      sep: "https://plato.stanford.edu/entries/plato-metaphysics/"
     }
   },
   {
@@ -1356,7 +1491,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kroppens rolle diskuteres fra dualistiske til mere integrerede sjæl-krop modeller.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Krop",
-      lex: "https://lex.dk/krop"
+      lex: "https://lex.dk/krop",
+      sep: "https://plato.stanford.edu/entries/ancient-soul/"
     }
   },
   {
@@ -1366,7 +1502,8 @@ const GLOSSARY_TERMS = [
     explanation: "I stoisk kosmologi et aktivt, gennemtrængende princip i naturen.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Pneuma",
-      lex: "https://lex.dk/pneuma"
+      lex: "https://lex.dk/pneuma",
+      sep: "https://plato.stanford.edu/entries/stoicism/"
     }
   },
   {
@@ -1376,7 +1513,8 @@ const GLOSSARY_TERMS = [
     explanation: "Peger på idéen om ordnet struktur, beslægtet med ordet kosmos.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=kosmesis"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1386,7 +1524,8 @@ const GLOSSARY_TERMS = [
     explanation: "Forholdet mellem dele i afstemt orden, centralt i etik, musik og kosmologi.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Harmoni",
-      lex: "https://lex.dk/harmoni"
+      lex: "https://lex.dk/harmoni",
+      sep: null
     }
   },
   {
@@ -1396,7 +1535,8 @@ const GLOSSARY_TERMS = [
     explanation: "Mådeholdets mål-princip: det passende frem for det ekstreme.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/M%C3%A5l",
-      lex: "https://lex.dk/m%C3%A5l"
+      lex: "https://lex.dk/m%C3%A5l",
+      sep: null
     }
   },
   {
@@ -1406,7 +1546,8 @@ const GLOSSARY_TERMS = [
     explanation: "Overskridelse af grænser, ofte efterfulgt af korrektion i tragedie og moralfortælling.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hybris",
-      lex: "https://lex.dk/hybris"
+      lex: "https://lex.dk/hybris",
+      sep: "https://plato.stanford.edu/entries/aristotle-rhetoric/"
     }
   },
   {
@@ -1416,7 +1557,8 @@ const GLOSSARY_TERMS = [
     explanation: "Begreb for genoprettende modvægt når grænser og mål krænkes.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Nemesis",
-      lex: "https://lex.dk/nemesis"
+      lex: "https://lex.dk/nemesis",
+      sep: null
     }
   },
   {
@@ -1426,7 +1568,8 @@ const GLOSSARY_TERMS = [
     explanation: "Retfærdighedens konkrete udtryk i lov, dom og social orden.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dike",
-      lex: "https://lex.dk/s%C3%B8g?Query=dike"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1436,7 +1579,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sandhed i handling: at vurdering og valg svarer til den konkrete virkelighed.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8g?Query=praktisk%20sandhed"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1446,7 +1590,8 @@ const GLOSSARY_TERMS = [
     explanation: "Vurderingen af hvad der tjener fællesskabet eller individets egentlige bedste.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/gavn"
+      lex: "https://lex.dk/gavn",
+      sep: null
     }
   },
   {
@@ -1456,7 +1601,8 @@ const GLOSSARY_TERMS = [
     explanation: "Nøgleord i politik: hvad borgere deler som fælles anliggende og ansvar.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/F%C3%A6llesgode",
-      lex: "https://lex.dk/f%C3%A6llesgode"
+      lex: "https://lex.dk/f%C3%A6llesgode",
+      sep: null
     }
   },
   {
@@ -1466,7 +1612,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kontrast til det fælles: den private sfære eller en arts særlige egenskab.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/privat"
+      lex: "https://lex.dk/privat",
+      sep: null
     }
   },
   {
@@ -1476,7 +1623,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den der elsker visdom; idealet spænder fra dialogpartner til livsvejleder.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Filosof",
-      lex: "https://lex.dk/filosof"
+      lex: "https://lex.dk/filosof",
+      sep: null
     }
   },
   {
@@ -1486,7 +1634,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kritisk undersøgelse af det gode liv, viden, virkelighed og politisk orden.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Filosofi",
-      lex: "https://lex.dk/filosofi"
+      lex: "https://lex.dk/filosofi",
+      sep: null
     }
   },
   {
@@ -1496,7 +1645,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kulturmarkør i antikken, ofte brugt til at definere græsk identitet gennem kontrast.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Barbar",
-      lex: "https://lex.dk/barbar"
+      lex: "https://lex.dk/barbar",
+      sep: null
     }
   },
   {
@@ -1506,7 +1656,8 @@ const GLOSSARY_TERMS = [
     explanation: "Sprog er i klassisk tænkning både erkendelsesredskab og politisk magtmiddel.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sprog",
-      lex: "https://lex.dk/sprog"
+      lex: "https://lex.dk/sprog",
+      sep: null
     }
   },
   {
@@ -1516,7 +1667,8 @@ const GLOSSARY_TERMS = [
     explanation: "Mytos bruges både som poetisk forklaring og som pædagogisk form i filosofien.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Myte",
-      lex: "https://lex.dk/myte"
+      lex: "https://lex.dk/myte",
+      sep: null
     }
   },
   {
@@ -1526,7 +1678,8 @@ const GLOSSARY_TERMS = [
     explanation: "Dialogformen gør tænkning til fælles undersøgelse frem for monologisk dogmatik.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dialog",
-      lex: "https://lex.dk/dialog"
+      lex: "https://lex.dk/dialog",
+      sep: null
     }
   },
   {
@@ -1536,7 +1689,8 @@ const GLOSSARY_TERMS = [
     explanation: "Ro forstået som disciplineret stilhed i sindet, beslægtet med senere kontemplative traditioner.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hesykasme",
-      lex: "https://lex.dk/s%C3%B8g?Query=hesychia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1546,7 +1700,8 @@ const GLOSSARY_TERMS = [
     explanation: "Betegner seriøs målrettethed i læring og moralsk dannelse.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/alvor"
+      lex: "https://lex.dk/alvor",
+      sep: null
     }
   },
   {
@@ -1556,7 +1711,8 @@ const GLOSSARY_TERMS = [
     explanation: "Relationelle begreber er afgørende i analyser af etik, politik og kategorier.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Relation_(filosofi)",
-      lex: "https://lex.dk/relation"
+      lex: "https://lex.dk/relation",
+      sep: null
     }
   },
   {
@@ -1566,7 +1722,8 @@ const GLOSSARY_TERMS = [
     explanation: "Social-moralsk følelse der regulerer adfærd gennem respekt og blufærdighed.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Aidos",
-      lex: "https://lex.dk/s%C3%B8g?Query=aidos"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1576,7 +1733,8 @@ const GLOSSARY_TERMS = [
     explanation: "Den overordnede indstilling eller holdning, som præger handling og vurdering.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/sindelag"
+      lex: "https://lex.dk/sindelag",
+      sep: null
     }
   },
   {
@@ -1586,7 +1744,8 @@ const GLOSSARY_TERMS = [
     explanation: "Filosofien forstås som en vedvarende undersøgelsesbevægelse snarere end slutpunkt.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/s%C3%B8gen"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1596,7 +1755,8 @@ const GLOSSARY_TERMS = [
     explanation: "Kan betyde guddommelig forsyn eller menneskelig fremsynet planlægning.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Providens",
-      lex: "https://lex.dk/forsyn"
+      lex: "https://lex.dk/forsyn",
+      sep: null
     }
   },
   {
@@ -1606,7 +1766,8 @@ const GLOSSARY_TERMS = [
     explanation: "I tragedieteori den fejl eller forvildelse der sætter faldet i gang.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hamartia",
-      lex: "https://lex.dk/s%C3%B8g?Query=hamartia"
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/aristotle-aesthetics/"
     }
   },
   {
@@ -1616,7 +1777,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det dramatiske vendepunkt hvor handlingens retning pludseligt ændres.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Peripeti",
-      lex: "https://lex.dk/peripeti"
+      lex: "https://lex.dk/peripeti",
+      sep: null
     }
   },
   {
@@ -1626,7 +1788,8 @@ const GLOSSARY_TERMS = [
     explanation: "Det øjeblik hvor en afgørende sandhed erkendes i tragediens forløb.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Anagnorisis",
-      lex: "https://lex.dk/s%C3%B8g?Query=anagnorisis"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1636,7 +1799,8 @@ const GLOSSARY_TERMS = [
     explanation: "Politisk enighed om grundlæggende mål, ikke nødvendigvis enighed om alle detaljer.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Samdr%C3%A6gtighed",
-      lex: "https://lex.dk/samdr%C3%A6gtighed"
+      lex: "https://lex.dk/samdr%C3%A6gtighed",
+      sep: null
     }
   },
   {
@@ -1646,7 +1810,8 @@ const GLOSSARY_TERMS = [
     explanation: "Ideal om velordnet samfund med ret, balance og institutionel stabilitet.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Eunomia",
-      lex: "https://lex.dk/s%C3%B8g?Query=eunomia"
+      lex: null,
+      sep: null
     }
   },
   {
@@ -1656,7 +1821,8 @@ const GLOSSARY_TERMS = [
     explanation: "Ambition efter anerkendelse; kan være drivkraft eller forfaldstendens afhængigt af mål.",
     links: {
       wiki: null,
-      lex: "https://lex.dk/%C3%A6re"
+      lex: "https://lex.dk/%C3%A6re",
+      sep: null
     }
   },
   {
@@ -1666,7 +1832,8 @@ const GLOSSARY_TERMS = [
     explanation: "Begrebet bruges i etisk kritik af overfladisk tilpasning til publikums smag.",
     links: {
       wiki: null,
-      lex: null
+      lex: null,
+      sep: null
     }
   }
 ];
@@ -1738,6 +1905,22 @@ function buildGreekDictionaryUrl(word) {
   return baseUrl + encodeURIComponent(word);
 }
 
+function buildExtLinksHtml(links) {
+  if (!links) return "";
+  const items = [];
+  if (links.wiki) items.push({ url: links.wiki, label: "Wikipedia" });
+  if (links.lex && !links.lex.includes("s%C3%B8g")) items.push({ url: links.lex, label: "Lex.dk" });
+  if (links.sep) items.push({ url: links.sep, label: "Stanford" });
+  if (!items.length) return "";
+  const anchors = items
+    .map(
+      (item) =>
+        `<a href="${item.url}" class="glossary-ext-link" target="_blank" rel="noopener noreferrer">${item.label}</a>`
+    )
+    .join("");
+  return `<div class="glossary-ext-links">${anchors}</div>`;
+}
+
 function renderTable() {
   const filtered = filterRows(baseRows);
   const sorted = sortRows(filtered);
@@ -1761,6 +1944,7 @@ function renderTable() {
               <span class="glossary-greek">${row.greek}</span>
               <span class="glossary-translit">${row.transliteration}</span>
             </a>
+            ${buildExtLinksHtml(row.links)}
             <p class="glossary-explanation">${row.explanation}</p>
           </td>
           <td class="glossary-cell glossary-cell-danish" data-label="Dansk">${row.danish}</td>

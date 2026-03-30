@@ -824,3 +824,102 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition:none !important; scroll-behavior:auto !important; }
 }
+
+/* ── External encyclopedia link badges (Begreber table rows) ── */
+.glossary-ext-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin-top: .4rem;
+}
+
+.glossary-ext-link {
+  display: inline-block;
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--brand-600);
+  text-decoration: none;
+  border: 1px solid var(--brand-600);
+  border-radius: 9999px;
+  padding: .1rem .45rem;
+  line-height: 1.5;
+  opacity: .7;
+  transition: opacity .15s, background .15s, color .15s;
+  white-space: nowrap;
+}
+
+.glossary-ext-link:hover,
+.glossary-ext-link:focus-visible {
+  opacity: 1;
+  background: var(--brand-600);
+  color: #fff;
+  outline: none;
+}
+
+[data-theme="dark"] .glossary-ext-link {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+[data-theme="dark"] .glossary-ext-link:hover,
+[data-theme="dark"] .glossary-ext-link:focus-visible {
+  background: var(--brand-accent);
+  color: var(--surface);
+}
+
+/* ── External encyclopedia links section (Person article pages) ── */
+.person-ext-links {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.person-ext-links-heading {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--muted);
+  margin: 0 0 .65rem;
+}
+
+.person-ext-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.person-ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--brand-600);
+  text-decoration: none;
+  border: 1.5px solid var(--brand-600);
+  border-radius: 9999px;
+  padding: .3rem .85rem;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
+}
+
+.person-ext-link:hover,
+.person-ext-link:focus-visible {
+  background: var(--brand-600);
+  color: #fff;
+  outline: none;
+}
+
+[data-theme="dark"] .person-ext-link {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+[data-theme="dark"] .person-ext-link:hover,
+[data-theme="dark"] .person-ext-link:focus-visible {
+  background: var(--brand-accent);
+  color: var(--surface);
+}

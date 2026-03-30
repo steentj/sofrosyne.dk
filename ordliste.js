@@ -1941,8 +1941,8 @@ function renderTable() {
               data-description="${row.explanation.replace(/"/g, "&quot;")}"
               aria-label="${termLabel.replace(/"/g, "&quot;")}: ${row.explanation.replace(/"/g, "&quot;")}. Åbner Græsk-Dansk Ordbog"
             >
-              <span class="glossary-greek">${row.greek}</span>
               <span class="glossary-translit">${row.transliteration}</span>
+              <span class="glossary-greek">${row.greek}</span>
             </a>
             ${buildExtLinksHtml(row.links)}
             <p class="glossary-explanation">${row.explanation}</p>

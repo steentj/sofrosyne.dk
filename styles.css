@@ -302,8 +302,8 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
   text-decoration: none;
 }
 
-.glossary-term:hover .glossary-greek,
-.glossary-term:focus-visible .glossary-greek {
+.glossary-term:hover .glossary-translit,
+.glossary-term:focus-visible .glossary-translit {
   color: var(--brand-600);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -315,12 +315,12 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
   border-radius: 4px;
 }
 
-.glossary-greek {
+.glossary-translit {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.glossary-translit {
+.glossary-greek {
   margin-top: .2rem;
   font-size: .8rem;
   color: var(--muted);
@@ -486,17 +486,18 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
     margin-bottom: .15rem;
   }
 
-  /* ── Show inline explanation on mobile ── */
+  /* ── Show inline explanation on touch – explanation is already inline ── */
+  .glossary-translit {
+    font-size: 1.18rem;
+  }
+}
+
+/* Show inline explanation and suppress hover tooltip on touch devices */
+@media (hover: none) {
   .glossary-explanation {
     display: block;
   }
 
-  /* ── Greek text size ── */
-  .glossary-greek {
-    font-size: 1.18rem;
-  }
-
-  /* Suppress hover tooltip on touch – explanation is already inline */
   .glossary-tooltip {
     display: none !important;
   }

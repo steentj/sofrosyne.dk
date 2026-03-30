@@ -1862,7 +1862,7 @@ const state = {
   sortDirection: "asc"
 };
 
-const baseRows = GLOSSARY_TERMS.slice(0, 101).map((item, index) => ({ ...item, index }));
+const baseRows = GLOSSARY_TERMS.map((item, index) => ({ ...item, index }));
 
 function normalizeText(value) {
   return value

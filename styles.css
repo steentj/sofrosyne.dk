@@ -1148,6 +1148,32 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
   margin-top: .5rem;
 }
 
+/* Tighter ext-link footer inside compact period cards */
+.history-period-card .person-ext-links {
+  margin-top: 1rem;
+  padding-top: .8rem;
+}
+
+.history-period-card .person-ext-links-heading {
+  margin-bottom: .5rem;
+}
+
+/* Inline reference links within history prose */
+.history-ref-link {
+  color: var(--brand-600);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.history-ref-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+[data-theme="dark"] .history-ref-link {
+  color: var(--brand-accent);
+}
+
 .history-period-range {
   margin: 0 0 .45rem;
   font-size: .82rem;

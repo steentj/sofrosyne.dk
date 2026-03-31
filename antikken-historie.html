@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historie i den græske antik – Sofrosyne</title>
+    <link rel="icon" href="images/sofrosyne_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/sofrosyne_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=GFS+Didot&family=Cormorant+Garamond:wght@700&family=Sorts+Mill+Goudy&family=Noto+Serif:wght@700&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/sofrosyne_icon.png" alt="Sofrosyne ikon" class="h-6 mr-2" style="height: 3.5em;">
+                    <span class="text-teal-700 font-bold text-2xl" style="font-family: 'Cinzel', serif;">Sofrosyne</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                                <ul class="flex flex-col sm:flex-row sm:space-x-6 sm:items-end space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="index.html">Forside</a></li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Om sofrosyne</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="historie.html">Idéhistorie</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="citatbibliotek.html">Citater</a>
+                        </div>
+                    </li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Antikken</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="antikken-historie.html" aria-current="page">Historie</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="personer.html">Personer</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="ordliste.html">Begreber</a>
+                        </div>
+                    </li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="history-hero">
+            <div class="history-hero-copy">
+                <p class="history-kicker">Antikken</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight animate-fadeIn">Historie i den græske antik</h1>
+                <p class="history-lead">Fra de første bystater til Alexanders verdensrige og hellenismens kulturmøder: denne side giver en samlet, læsbar indføring i den græske antiks vigtigste perioder, konflikter og skikkelser.</p>
+                <div class="history-hero-actions">
+                    <a href="#perioder" class="history-button history-button-primary">Gå til perioderne</a>
+                    <a href="personer.html" class="history-button history-button-secondary">Mød personerne</a>
+                </div>
+            </div>
+
+            <dl class="history-facts" aria-label="Hurtigt overblik">
+                <div class="history-fact">
+                    <dt>Tidsrum</dt>
+                    <dd>ca. 800–146 f.Kr.</dd>
+                </div>
+                <div class="history-fact">
+                    <dt>Tyngdepunkter</dt>
+                    <dd>Polis, demokrati, krig, imperium</dd>
+                </div>
+                <div class="history-fact">
+                    <dt>Nøglefigurer</dt>
+                    <dd>Solon, Kleisthenes, Perikles, Alexander</dd>
+                </div>
+                <div class="history-fact">
+                    <dt>Eftervirkning</dt>
+                    <dd>Græsk kultur præger hele Middelhavet</dd>
+                </div>
+            </dl>
+        </section>
+
+        <nav class="history-toc" aria-label="Indhold på siden">
+            <a href="#oversigt">Oversigt</a>
+            <a href="#perioder">Perioder</a>
+            <a href="#videre">Videre læsning</a>
+        </nav>
+
+        <section id="oversigt" class="history-section">
+            <div class="history-section-head">
+                <p class="history-kicker">Oversigt</p>
+                <h2>Fra bystat til verdenshorisont</h2>
+            </div>
+            <div class="history-intro-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="history-paragraph">Den græske antik begynder ikke med ét samlet rige, men med mange små <strong>poliser</strong> – selvstændige bystater med egne love, guder og magtkampe. Ud af disse samfund voksede institutioner som folkeforsamling, søforbund, filosofi og historieskrivning.</p>
+                        <p class="history-paragraph">Historien kan læses som en bevægelse mellem <strong>lokal selvstændighed</strong> og <strong>større fællesskaber</strong>: først kolonisering og handelsnetværk, siden alliancer og krige, derefter Makedoniens samling af Grækenland og til sidst hellenismens store kulturzoner.</p>
+                    </div>
+                </div>
+                <aside class="history-callout" aria-labelledby="historie-paa-linjer">
+                    <h3 id="historie-paa-linjer">Historien på tre linjer</h3>
+                    <ul>
+                        <li>Arkaisk tid former polisen, kolonierne og de første reformer i Athen.</li>
+                        <li>Klassisk tid samler stor kultur og ødelæggende krige i samme periode.</li>
+                        <li>Alexander og hellenismen gør græsk kultur til en middelhavs- og verdenssag.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="perioder" class="history-section">
+            <div class="history-section-head">
+                <p class="history-kicker">Perioder</p>
+                <h2>De fire hovedfaser</h2>
+            </div>
+
+            <div class="history-period-grid">
+                <article class="history-period-card">
+                    <p class="history-period-range">ca. 800–500 f.Kr.</p>
+                    <h3>1. Arkaisk tid</h3>
+                    <p>I denne periode tager den græske bystat form. Magten ligger længe hos aristokratiet, men sociale spændinger og økonomiske forandringer skaber pres for reformer.</p>
+                    <ul>
+                        <li><strong>Polisen</strong> vokser frem omkring akropolis og agora og gør politik lokal og nærværende: borger, lov og offentligt rum bliver konkrete størrelser.</li>
+                        <li>Koloniseringen fører grækere til Syditalien og Sicilien, det senere <em>Magna Graecia</em>.</li>
+                        <li>I Athen markerer <strong>Solon</strong>, <strong>Peisistratos</strong> og <strong>Kleisthenes</strong> overgangen fra slægtsmagt til bredere politisk deltagelse og stærkere institutioner.</li>
+                    </ul>
+                </article>
+
+                <article class="history-period-card">
+                    <p class="history-period-range">ca. 500–323 f.Kr.</p>
+                    <h3>2. Klassisk tid</h3>
+                    <p>Klassisk tid rummer både Athens kulturelle højdepunkt og de konflikter, der slider de græske bystater op. Demokratiets fremgang ledsages af næsten konstant krigsfare.</p>
+                    <ul>
+                        <li><strong>Perserkrigene</strong> samler grækerne mod Dareios og Xerxes og gør slag som Marathon og Salamis skelsættende; de bliver også en fælles fortælling om modstandskraft, som man kan følge hos <a href="personer/herodot.html">Herodot</a>.</li>
+                        <li>Athen bliver stormagt gennem det <strong>Deliske Søforbund</strong> og forbindes tæt med <a href="personer/perikles.html">Perikles</a>, demokratiske reformer og et sjældent koncentreret kulturelt højdepunkt.</li>
+                        <li>Den <strong>Peloponnesiske Krig</strong> mellem Athen og Sparta ender med athensk nederlag og langvarig svækkelse; hos <a href="personer/thukydid.html">Thukydid</a> ses også, hvor skrøbeligt bystatssystemet var.</li>
+                    </ul>
+                </article>
+
+                <article class="history-period-card">
+                    <p class="history-period-range">338–323 f.Kr.</p>
+                    <h3>3. Makedonien og Alexander</h3>
+                    <p>Efter årtiers rivalisering mister bystaterne initiativet. Filip 2. samler Makedonien til en stormagt, og hans søn Alexander udvider horisonten radikalt.</p>
+                    <ul>
+                        <li><strong>Khaironea</strong> i 338 f.Kr. gør Filip til hegemon over Grækenland.</li>
+                        <li>Alexander besejrer Persien og skaber et rige fra Egypten til Indien.</li>
+                        <li>Felttoget ændrer skalaen i græsk historie: græske, egyptiske og persiske verdener forbindes tættere, og græsk sprog, kunst og bykultur bliver fælles referencepunkter.</li>
+                    </ul>
+                </article>
+
+                <article class="history-period-card">
+                    <p class="history-period-range">323–146 f.Kr.</p>
+                    <h3>4. Hellenismen og Rom</h3>
+                    <p>Efter Alexanders død splittes riget mellem hans generaler, men kulturen fortsætter med at brede sig. Alexandria og andre storbyer bliver centre for viden, handel og blandingskultur.</p>
+                    <ul>
+                        <li><strong>Diadokerne</strong> deler riget i blandt andet det ptolemæiske Egypten og det seleukidiske Syrien.</li>
+                        <li><strong>Hellenismen</strong> spreder græske former for uddannelse, kunst, filosofi og byliv, mens byer som Alexandria bliver laboratorier for lærdom og kulturmøder.</li>
+                        <li>I 146 f.Kr. underlægges Grækenland Rom, men græsk kultur fortsætter med at forme romersk tænkning og bliver senere genfortolket af forfattere som <a href="personer/plutarch.html">Plutarch</a>.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="videre" class="history-section">
+            <div class="history-section-head">
+                <p class="history-kicker">Videre læsning</p>
+                <h2>Fortsæt i sitets andre antikke spor</h2>
+            </div>
+            <div class="history-links-grid">
+                <a class="history-link-card" href="personer.html">
+                    <h3>Personer</h3>
+                    <p>Gå videre til tidslinjen over digtere, filosoffer, historikere og statsmænd.</p>
+                </a>
+                <a class="history-link-card" href="ordliste.html">
+                    <h3>Begreber</h3>
+                    <p>Se centrale græske ord og begreber, der knytter sig til antikken.</p>
+                </a>
+                <a class="history-link-card" href="historie.html">
+                    <h3>Idéhistorie</h3>
+                    <p>Læs videre om sofrosyne som idéhistorisk begreb på tværs af perioder.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2026 Sofrosyne.dk</footer>
+</body>
+</html>

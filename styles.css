@@ -924,3 +924,309 @@ footer { background: linear-gradient(180deg, rgba(var(--brand-rgb)/.05), rgba(va
   background: var(--brand-accent);
   color: var(--surface);
 }
+
+/* ── Greek antiquity history page ── */
+.history-hero {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  padding: clamp(1.4rem, 2.2vw, 2.2rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(var(--brand-rgb)/.12), rgba(var(--brand-rgb)/.04)),
+    var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.history-kicker {
+  margin: 0 0 .55rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--brand-600);
+}
+
+.history-lead {
+  margin: .9rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+.history-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+
+.history-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .8rem 1.05rem;
+  border-radius: 9999px;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.history-button:hover {
+  transform: translateY(-1px);
+}
+
+.history-button:focus-visible,
+.history-toc a:focus-visible,
+.history-link-card:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.history-button-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  box-shadow: 0 8px 24px -14px rgba(var(--brand-rgb)/.9);
+}
+
+.history-button-secondary {
+  color: var(--brand);
+  border: 1px solid rgba(var(--brand-rgb)/.3);
+  background: rgba(var(--brand-rgb)/.05);
+}
+
+.history-facts {
+  display: grid;
+  gap: .85rem;
+}
+
+.history-fact {
+  padding: .95rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255 255 255 / .68);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.history-fact dt {
+  margin-bottom: .25rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.history-fact dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.history-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 0 0 2rem;
+}
+
+.history-toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: .45rem .9rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.history-toc a:hover {
+  color: var(--brand);
+  border-color: rgba(var(--brand-rgb)/.35);
+  background: rgba(var(--brand-rgb)/.04);
+}
+
+.history-section {
+  margin-top: 3rem;
+}
+
+.history-section-head {
+  margin-bottom: 1.1rem;
+}
+
+.history-section-head h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 2vw, 2.2rem);
+  color: var(--brand);
+}
+
+.history-section-text {
+  margin-top: .7rem;
+  color: var(--ink-soft);
+}
+
+.history-intro-grid,
+.history-period-grid,
+.history-links-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.history-paragraph {
+  margin-bottom: .95rem;
+  color: var(--ink-soft);
+}
+
+.history-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.history-callout {
+  padding: 1.15rem 1.15rem 1.1rem;
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-xs);
+}
+
+.history-callout h3 {
+  margin: 0 0 .7rem;
+  font-size: 1.05rem;
+  color: var(--brand);
+}
+
+.history-callout ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.history-callout li + li {
+  margin-top: .55rem;
+}
+
+.history-period-card,
+.history-link-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-xs);
+}
+
+.history-period-card {
+  padding: 1.15rem 1.2rem;
+}
+
+.history-period-card h3 {
+  margin: 0 0 .65rem;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.history-period-card p,
+.history-period-card li {
+  color: var(--ink-soft);
+}
+
+.history-period-card ul {
+  margin: .85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.history-period-card li + li {
+  margin-top: .5rem;
+}
+
+.history-period-range {
+  margin: 0 0 .45rem;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--brand-600);
+}
+
+.history-links-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.history-link-card {
+  display: block;
+  padding: 1.1rem 1.15rem;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.history-link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(var(--brand-rgb)/.35);
+}
+
+.history-link-card h3 {
+  margin: 0 0 .45rem;
+  color: var(--brand);
+  font-size: 1.05rem;
+}
+
+.history-link-card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+[data-theme="dark"] .history-hero {
+  background:
+    linear-gradient(135deg, rgba(var(--brand-rgb)/.16), rgba(var(--brand-rgb)/.06)),
+    var(--surface);
+}
+
+[data-theme="dark"] .history-fact {
+  background: rgba(21 38 56 / .78);
+}
+
+[data-theme="dark"] .history-button-secondary {
+  color: var(--brand-accent);
+  border-color: rgba(var(--brand-rgb)/.45);
+  background: rgba(var(--brand-rgb)/.12);
+}
+
+[data-theme="dark"] .history-toc a:hover {
+  background: rgba(var(--brand-rgb)/.12);
+}
+
+@media (min-width: 900px) {
+  .history-hero {
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, .9fr);
+  }
+
+  .history-intro-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, .8fr);
+  }
+
+  .history-period-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .history-hero-actions,
+  .history-toc {
+    flex-direction: column;
+  }
+
+  .history-button,
+  .history-toc a {
+    width: 100%;
+  }
+}

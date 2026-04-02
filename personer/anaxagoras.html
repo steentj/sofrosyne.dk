@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anaxagoras – Sofrosyne</title>
+    <link rel="icon" href="../images/sofrosyne_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/sofrosyne_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@700&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <script src="../theme.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+    <header class="bg-white shadow-sm">
+        <nav class="nav max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../images/sofrosyne_icon.png" alt="Sofrosyne ikon" class="h-6 mr-2" style="height: 3.5em;">
+                    <span class="text-teal-700 font-bold text-2xl" style="font-family: 'Cinzel', serif;">Sofrosyne</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <button id="menu-toggle" type="button" class="theme-toggle sm:hidden" aria-label="Åbn menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+                    <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Skift til mørkt tema" title="Mørkt tema">🌙</button>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden sm:flex items-center justify-end">
+                                <ul class="flex flex-col sm:flex-row sm:space-x-6 sm:items-end space-y-3 sm:space-y-0 text-sm font-semibold px-2 sm:px-0 py-3 sm:py-0">
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../index.html">Forside</a></li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Om sofrosyne</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="../historie.html">Idéhistorie</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="../citatbibliotek.html">Citater</a>
+                        </div>
+                    </li>
+                    <li class="nav-group">
+                        <span class="nav-group-label">Antikken</span>
+                        <div class="nav-group-links">
+                            <a class="text-gray-700 hover:text-teal-600" href="../antikken-historie.html">Historie</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="../personer.html">Personer</a>
+                            <a class="text-gray-700 hover:text-teal-600" href="../ordliste.html">Begreber</a>
+                        </div>
+                    </li>
+                    <li><a class="text-gray-700 hover:text-teal-600" href="../om.html">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <a href="../personer.html" class="person-back">← Tilbage til tidslinjen</a>
+
+        <article class="card person-article">
+            <div class="card-body">
+                <span class="tl-badge tl-filosof">Filosof</span>
+                <h1>Anaxagoras</h1>
+                <span class="person-period">ca. 500–428 f.Kr.</span>
+
+                <p>Anaxagoras fra Klazomenai i Lilleasien var den første filosof, der slog sig ned i Athen, og bragte dermed den ioniske naturfilosofiske tradition til byens intellektuelle miljø. Han blev en del af Perikles' kreds og øvede stor indflydelse på Athens kulturelle liv.</p>
+
+                <p>Han lærte, at <em>nous</em> (fornuft eller intellekt) var den ordnende kraft, der satte kosmos i bevægelse. Alle ting indeholder en blanding af alle stoffer, men nous adskiller og organiserer dem – en idé, der pegede frem mod senere filosoffers skelnen mellem stof og ånd.</p>
+
+                <h2>Naturfilosofi</h2>
+                <p>Anaxagoras gav den første korrekte forklaring på solformørkelser og hævdede, at solen er en glødende sten større end Peloponnes – ikke en guddom. Månen, mente han, modtager sit lys fra solen. Disse påstande var revolutionære og blev opfattet som gudsbespottelse af mange athenere.</p>
+
+                <h2>Betydning og eftermæle</h2>
+                <p>Anaxagoras blev anklaget for gudløshed (<em>asebeia</em>) og måtte forlade Athen – et skæbnesvangert fortilfælde, der foregriber Sokrates' retssag. Hans begreb om nous som kosmisk fornuft inspirerede både Platon og Aristoteles, der dog kritiserede ham for ikke at udfolde idéen konsekvent nok.</p>
+
+                <section class="person-ext-links">
+                    <p class="person-ext-links-heading">Læs mere</p>
+                    <div class="person-ext-links-row">
+                        <a href="https://da.wikipedia.org/wiki/Anaxagoras" class="person-ext-link" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                        <a href="https://lex.dk/Anaxagoras" class="person-ext-link" target="_blank" rel="noopener noreferrer">Lex.dk</a>
+                        <a href="https://plato.stanford.edu/entries/anaxagoras/" class="person-ext-link" target="_blank" rel="noopener noreferrer">Stanford Encyclopedia</a>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2026 Sofrosyne.dk</footer>
+</body>
+</html>

@@ -53,19 +53,26 @@
             <h1 class="text-5xl font-bold text-teal-600 mb-5 animate-fadeIn">Personer</h1>
             <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 De vigtigste skikkelser i den græske antik – fra Homers episke digte til Plutarchs biografier.
-                Hold markøren over en person for en kort introduktion, eller klik for at læse mere.
+                Brug søgefeltet eller kategoriknapperne til at filtrere, eller klik på en person for at læse mere.
             </p>
         </section>
 
-        <div class="timeline-legend">
-            <span class="tl-badge tl-filosof">Filosof</span>
-            <span class="tl-badge tl-digter">Digter</span>
-            <span class="tl-badge tl-dramatiker">Dramatiker</span>
-            <span class="tl-badge tl-historiker">Historiker</span>
-            <span class="tl-badge tl-statsmand">Statsmand</span>
-            <span class="tl-badge tl-laege">Læge</span>
-            <span class="tl-badge tl-matematiker">Matematiker</span>
-            <span class="tl-badge tl-taler">Taler</span>
+        <!-- Filter bar -->
+        <div class="person-filter">
+            <div class="person-filter-search">
+                <input type="text" id="person-search" placeholder="Søg efter person…" autocomplete="off" aria-label="Søg efter person">
+            </div>
+            <div class="person-filter-categories" role="group" aria-label="Filtrer efter kategori">
+                <button class="tl-badge tl-filter-btn tl-filosof active" data-category="filosof">Filosof</button>
+                <button class="tl-badge tl-filter-btn tl-digter active" data-category="digter">Digter</button>
+                <button class="tl-badge tl-filter-btn tl-dramatiker active" data-category="dramatiker">Dramatiker</button>
+                <button class="tl-badge tl-filter-btn tl-historiker active" data-category="historiker">Historiker</button>
+                <button class="tl-badge tl-filter-btn tl-statsmand active" data-category="statsmand">Statsmand</button>
+                <button class="tl-badge tl-filter-btn tl-laege active" data-category="laege">Læge</button>
+                <button class="tl-badge tl-filter-btn tl-matematiker active" data-category="matematiker">Matematiker</button>
+                <button class="tl-badge tl-filter-btn tl-taler active" data-category="taler">Taler</button>
+            </div>
+            <div id="person-filter-status" class="person-filter-status" aria-live="polite"></div>
         </div>
 
         <div class="timeline">
@@ -76,7 +83,7 @@
             </div>
 
             <!-- 1 · Homer -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="homer" data-category="digter">
                 <a href="personer/homer.html" class="timeline-card">
                     <span class="tl-badge tl-digter">Digter</span>
                     <h3>Homer</h3>
@@ -86,7 +93,7 @@
             </div>
 
             <!-- 2 · Hesiod -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="hesiod" data-category="digter">
                 <a href="personer/hesiod.html" class="timeline-card">
                     <span class="tl-badge tl-digter">Digter</span>
                     <h3>Hesiod</h3>
@@ -96,7 +103,7 @@
             </div>
 
             <!-- 3 · Sappho -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="sappho" data-category="digter">
                 <a href="personer/sappho.html" class="timeline-card">
                     <span class="tl-badge tl-digter">Digter</span>
                     <h3>Sappho</h3>
@@ -106,7 +113,7 @@
             </div>
 
             <!-- 4 · Thales -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="thales" data-category="filosof">
                 <a href="personer/thales.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Thales</h3>
@@ -116,7 +123,7 @@
             </div>
 
             <!-- 5 · Pythagoras -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="pythagoras" data-category="filosof">
                 <a href="personer/pythagoras.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Pythagoras</h3>
@@ -126,7 +133,7 @@
             </div>
 
             <!-- 6 · Heraklit -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="heraklit" data-category="filosof">
                 <a href="personer/heraklit.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Heraklit</h3>
@@ -141,7 +148,7 @@
             </div>
 
             <!-- 7 · Aischylos -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="aischylos" data-category="dramatiker">
                 <a href="personer/aischylos.html" class="timeline-card">
                     <span class="tl-badge tl-dramatiker">Dramatiker</span>
                     <h3>Aischylos</h3>
@@ -151,7 +158,7 @@
             </div>
 
             <!-- 8 · Pindar -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="pindar" data-category="digter">
                 <a href="personer/pindar.html" class="timeline-card">
                     <span class="tl-badge tl-digter">Digter</span>
                     <h3>Pindar</h3>
@@ -161,7 +168,7 @@
             </div>
 
             <!-- 9 · Sofokles -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="sofokles" data-category="dramatiker">
                 <a href="personer/sofokles.html" class="timeline-card">
                     <span class="tl-badge tl-dramatiker">Dramatiker</span>
                     <h3>Sofokles</h3>
@@ -171,7 +178,7 @@
             </div>
 
             <!-- 10 · Perikles -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="perikles" data-category="statsmand">
                 <a href="personer/perikles.html" class="timeline-card">
                     <span class="tl-badge tl-statsmand">Statsmand</span>
                     <h3>Perikles</h3>
@@ -181,7 +188,7 @@
             </div>
 
             <!-- 11 · Herodot -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="herodot" data-category="historiker">
                 <a href="personer/herodot.html" class="timeline-card">
                     <span class="tl-badge tl-historiker">Historiker</span>
                     <h3>Herodot</h3>
@@ -191,7 +198,7 @@
             </div>
 
             <!-- 12 · Euripides -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="euripides" data-category="dramatiker">
                 <a href="personer/euripides.html" class="timeline-card">
                     <span class="tl-badge tl-dramatiker">Dramatiker</span>
                     <h3>Euripides</h3>
@@ -201,7 +208,7 @@
             </div>
 
             <!-- 13 · Sokrates -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="sokrates" data-category="filosof">
                 <a href="personer/sokrates.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Sokrates</h3>
@@ -211,7 +218,7 @@
             </div>
 
             <!-- 14 · Thukydid -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="thukydid" data-category="historiker">
                 <a href="personer/thukydid.html" class="timeline-card">
                     <span class="tl-badge tl-historiker">Historiker</span>
                     <h3>Thukydid</h3>
@@ -221,7 +228,7 @@
             </div>
 
             <!-- 15 · Demokrit -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="demokrit" data-category="filosof">
                 <a href="personer/demokrit.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Demokrit</h3>
@@ -231,7 +238,7 @@
             </div>
 
             <!-- 16 · Hippokrates -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="hippokrates" data-category="laege">
                 <a href="personer/hippokrates.html" class="timeline-card">
                     <span class="tl-badge tl-laege">Læge</span>
                     <h3>Hippokrates</h3>
@@ -241,7 +248,7 @@
             </div>
 
             <!-- 17 · Aristofanes -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="aristofanes" data-category="dramatiker">
                 <a href="personer/aristofanes.html" class="timeline-card">
                     <span class="tl-badge tl-dramatiker">Dramatiker</span>
                     <h3>Aristofanes</h3>
@@ -251,7 +258,7 @@
             </div>
 
             <!-- 18 · Platon -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="platon" data-category="filosof">
                 <a href="personer/platon.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Platon</h3>
@@ -261,7 +268,7 @@
             </div>
 
             <!-- 19 · Aristoteles -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="aristoteles" data-category="filosof">
                 <a href="personer/aristoteles.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Aristoteles</h3>
@@ -271,7 +278,7 @@
             </div>
 
             <!-- 20 · Demosthenes -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="demosthenes" data-category="taler">
                 <a href="personer/demosthenes.html" class="timeline-card">
                     <span class="tl-badge tl-taler">Taler</span>
                     <h3>Demosthenes</h3>
@@ -286,7 +293,7 @@
             </div>
 
             <!-- 21 · Epikur -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="epikur" data-category="filosof">
                 <a href="personer/epikur.html" class="timeline-card">
                     <span class="tl-badge tl-filosof">Filosof</span>
                     <h3>Epikur</h3>
@@ -296,7 +303,7 @@
             </div>
 
             <!-- 22 · Archimedes -->
-            <div class="timeline-item tl-right">
+            <div class="timeline-item tl-right" data-name="archimedes" data-category="matematiker">
                 <a href="personer/archimedes.html" class="timeline-card">
                     <span class="tl-badge tl-matematiker">Matematiker</span>
                     <h3>Archimedes</h3>
@@ -306,7 +313,7 @@
             </div>
 
             <!-- 23 · Plutarch -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-name="plutarch" data-category="historiker">
                 <a href="personer/plutarch.html" class="timeline-card">
                     <span class="tl-badge tl-historiker">Historiker</span>
                     <h3>Plutarch</h3>
@@ -319,5 +326,69 @@
     </main>
 
     <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">&copy; 2026 Sofrosyne.dk</footer>
+
+    <script>
+    (function () {
+      const searchInput = document.getElementById('person-search');
+      const categoryBtns = document.querySelectorAll('.tl-filter-btn');
+      const items = document.querySelectorAll('.timeline-item');
+      const eras = document.querySelectorAll('.timeline-era');
+      const status = document.getElementById('person-filter-status');
+      const total = items.length;
+
+      function activeCategories() {
+        const cats = new Set();
+        categoryBtns.forEach(b => { if (b.classList.contains('active')) cats.add(b.dataset.category); });
+        return cats;
+      }
+
+      function applyFilter() {
+        const query = searchInput.value.toLowerCase().trim();
+        const cats = activeCategories();
+        let visible = 0;
+
+        items.forEach(item => {
+          const name = item.dataset.name;
+          const cat = item.dataset.category;
+          const nameText = item.querySelector('h3').textContent.toLowerCase();
+          const matchName = !query || nameText.includes(query);
+          const matchCat = cats.size === 0 || cats.has(cat);
+          const show = matchName && matchCat;
+          item.style.display = show ? '' : 'none';
+          if (show) visible++;
+        });
+
+        // Hide era headers if all items in that era are hidden
+        eras.forEach(era => {
+          let next = era.nextElementSibling;
+          let hasVisible = false;
+          while (next && !next.classList.contains('timeline-era')) {
+            if (next.classList.contains('timeline-item') && next.style.display !== 'none') {
+              hasVisible = true;
+              break;
+            }
+            next = next.nextElementSibling;
+          }
+          era.style.display = hasVisible ? '' : 'none';
+        });
+
+        // Status message
+        if (visible === total && !query) {
+          status.textContent = '';
+        } else {
+          status.textContent = visible + ' af ' + total + ' personer vist';
+        }
+      }
+
+      searchInput.addEventListener('input', applyFilter);
+
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('active');
+          applyFilter();
+        });
+      });
+    })();
+    </script>
 </body>
 </html>

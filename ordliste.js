@@ -40,7 +40,7 @@ const GLOSSARY_TERMS = [
     explanation: "Visdom som indsigt i de højeste principper; ofte skilt fra praktisk dømmekraft.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Visdom",
-      lex: "https://lex.dk/visdom",
+      lex: "https://lex.dk/sofia",
       sep: "https://plato.stanford.edu/entries/wisdom/"
     }
   },
@@ -48,7 +48,7 @@ const GLOSSARY_TERMS = [
     greek: "δικαιοσύνη",
     transliteration: "dikaiosyne",
     danish: "retfærdighed",
-    explanation: "I Republikken bliver retfærdighed den orden, hvor hver del gør sit eget arbejde.",
+    explanation: "I Staten bliver retfærdighed den orden, hvor hver del gør sit eget arbejde.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Retf%C3%A6rdighed",
       lex: "https://lex.dk/retf%C3%A6rdighed",
@@ -61,9 +61,9 @@ const GLOSSARY_TERMS = [
     danish: "mod",
     explanation: "Mod er ikke dumdristighed, men standhaftighed over for frygt i det rette mål.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Mod",
-      lex: "https://lex.dk/mod",
-      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
+      wiki: "https://da.wikipedia.org/wiki/Mod_(følelse)",
+      lex: null,
+      sep: "https://plato.stanford.edu/entries/plato-ethics/"
     }
   },
   {
@@ -72,9 +72,9 @@ const GLOSSARY_TERMS = [
     danish: "lykke / menneskelig blomstring",
     explanation: "Aristoteles' mål for livet: at leve vel gennem dydig aktivitet over et helt liv.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Eudaimonia",
+      wiki: "https://da.wikipedia.org/wiki/Den_nikomakhæiske_etik",
       lex: "https://lex.dk/lykke",
-      sep: "https://plato.stanford.edu/entries/happiness/"
+      sep: "https://plato.stanford.edu/entries/ethics-virtue/"
     }
   },
   {
@@ -88,6 +88,7 @@ const GLOSSARY_TERMS = [
       sep: "https://plato.stanford.edu/entries/ancient-soul/"
     }
   },
+  // Checket hertil 2027-04-12
   {
     greek: "λόγος",
     transliteration: "logos",

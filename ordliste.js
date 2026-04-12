@@ -5,9 +5,9 @@ const GLOSSARY_TERMS = [
     danish: "mådehold / besindighed",
     explanation: "Kernen i klassisk selvbeherskelse: lyst, følelse og fornuft holdes i en harmonisk orden.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Sofrosyne",
-      lex: null,
-      sep: "https://plato.stanford.edu/entries/plato-ethics/"
+      wiki: null,
+      lex: "https://lex.dk/sofrosyne",
+      sep: "https://plato.stanford.edu/entries/plato-ethics/#VirStaSou"
     }
   },
   {
@@ -18,7 +18,7 @@ const GLOSSARY_TERMS = [
     links: {
       wiki: "https://da.wikipedia.org/wiki/Dyd",
       lex: "https://lex.dk/dyd",
-      sep: "https://plato.stanford.edu/entries/aristotle-ethics/"
+      sep: "https://plato.stanford.edu/entries/ethics-ancient/"
     }
   },
   {
@@ -27,11 +27,12 @@ const GLOSSARY_TERMS = [
     danish: "praktisk visdom",
     explanation: "Den dømmekraft, der finder det rette i konkrete situationer frem for abstrakt teori alene.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Fronesis",
+      wiki: "https://da.wikipedia.org/wiki/Viden",
       lex: "https://lex.dk/fronesis",
-      sep: "https://plato.stanford.edu/entries/practical-reason/"
+      sep: "https://plato.stanford.edu/search/searcher.py?query=phronesis"
     }
   },
+  // Checket hertil 2026-04-12
   {
     greek: "σοφία",
     transliteration: "sophia",
@@ -291,9 +292,9 @@ const GLOSSARY_TERMS = [
     danish: "overvejet valg",
     explanation: "Hos Aristoteles det ansvarsbærende valg efter overvejelse af midler og mål.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Prohairesis",
-      lex: null,
-      sep: "https://plato.stanford.edu/entries/action/"
+      wiki: "https://en.wikipedia.org/wiki/Prohairesis",
+      jstor: "https://www.jstor.org/stable/284144?",
+      sep: "https://plato.stanford.edu/search/search?query=prohairesis"
     }
   },
   {
@@ -1924,6 +1925,7 @@ function buildExtLinksHtml(links) {
   if (links.wiki) items.push({ url: links.wiki, label: "Wikipedia" });
   if (links.lex && !links.lex.includes("s%C3%B8g")) items.push({ url: links.lex, label: "Lex.dk" });
   if (links.sep) items.push({ url: links.sep, label: "Stanford" });
+  if (links.jstor) items.push({ url: links.jstor, label: "JSTOR" });
   if (!items.length) return "";
   const anchors = items
     .map(

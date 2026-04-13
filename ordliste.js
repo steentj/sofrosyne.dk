@@ -32,7 +32,6 @@ const GLOSSARY_TERMS = [
       sep: "https://plato.stanford.edu/search/searcher.py?query=phronesis"
     }
   },
-  // Checket hertil 2026-04-12
   {
     greek: "σοφία",
     transliteration: "sophia",
@@ -88,7 +87,6 @@ const GLOSSARY_TERMS = [
       sep: "https://plato.stanford.edu/entries/ancient-soul/"
     }
   },
-  // Checket hertil 2027-04-12
   {
     greek: "λόγος",
     transliteration: "logos",
@@ -96,8 +94,8 @@ const GLOSSARY_TERMS = [
     explanation: "Et nøgleord der spænder fra argument til verdensorden, afhængigt af forfatter og skole.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Logos",
-      lex: "https://lex.dk/logos",
-      sep: "https://plato.stanford.edu/entries/heraclitus/"
+      lex: "https://lex.dk/logos_-_i_filosofien",
+      sep: "https://plato.stanford.edu/entries/plato-theaetetus/"
     }
   },
   {
@@ -107,7 +105,7 @@ const GLOSSARY_TERMS = [
     explanation: "Intellektet som evne til at gribe de første principper og det universelle.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Nous",
-      lex: "https://lex.dk/intellekt",
+      lex: "https://lex.dk/fornuft",
       sep: "https://plato.stanford.edu/entries/aristotle-psychology/"
     }
   },
@@ -119,9 +117,10 @@ const GLOSSARY_TERMS = [
     links: {
       wiki: "https://da.wikipedia.org/wiki/Episteme",
       lex: "https://lex.dk/episteme",
-      sep: "https://plato.stanford.edu/entries/knowledge-analysis/"
+      sep: "https://plato.stanford.edu/entries/episteme-techne/"
     }
   },
+  // Checket hertil 2027-04-12
   {
     greek: "δόξα",
     transliteration: "doxa",

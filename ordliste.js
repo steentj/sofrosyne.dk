@@ -120,7 +120,6 @@ const GLOSSARY_TERMS = [
       sep: "https://plato.stanford.edu/entries/episteme-techne/"
     }
   },
-  // Checket hertil 2027-04-12
   {
     greek: "δόξα",
     transliteration: "doxa",
@@ -151,7 +150,7 @@ const GLOSSARY_TERMS = [
     links: {
       wiki: "https://da.wikipedia.org/wiki/Tro",
       lex: "https://lex.dk/tro",
-      sep: null
+      sep: "https://plato.stanford.edu/entries/aristotle-rhetoric/"
     }
   },
   {
@@ -161,7 +160,7 @@ const GLOSSARY_TERMS = [
     explanation: "Hos Aristoteles en særskilt psykisk funktion, vigtig for erfaring og læring.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Hukommelse",
-      lex: "https://lex.dk/hukommelse",
+      lex: "https://lex.dk/erindring",
       sep: null
     }
   },
@@ -172,10 +171,11 @@ const GLOSSARY_TERMS = [
     explanation: "Grundlaget for erfaring; hos Aristoteles indgangen til viden om det konkrete.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Sansning",
-      lex: "https://lex.dk/sansning",
-      sep: null
+      lex: "https://lex.dk/æstesi",
+      sep: "https://plato.stanford.edu/entries/plato-theaetetus/"
     }
   },
+  // Checket hertil 2027-04-14
   {
     greek: "πάθος",
     transliteration: "pathos",

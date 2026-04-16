@@ -175,7 +175,6 @@ const GLOSSARY_TERMS = [
       sep: "https://plato.stanford.edu/entries/plato-theaetetus/"
     }
   },
-  // Checket hertil 2027-04-14
   {
     greek: "πάθος",
     transliteration: "pathos",
@@ -183,8 +182,8 @@ const GLOSSARY_TERMS = [
     explanation: "Følelsesmæssig påvirkning, central i etik, retorik og tragedieteori.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Pathos",
-      lex: "https://lex.dk/pathos",
-      sep: null
+      lex: "https://lex.dk/patos",
+      sep: "https://plato.stanford.edu/entries/aristotle-rhetoric/"
     }
   },
   {
@@ -193,9 +192,9 @@ const GLOSSARY_TERMS = [
     danish: "eros / begærende kærlighed",
     explanation: "Hos Platon en drivkraft, der kan løftes fra sanselig længsel til erkendelse af det skønne.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Eros",
+      wiki: "https://da.wikipedia.org/wiki/Eros_(kærlighed)",
       lex: "https://lex.dk/eros",
-      sep: "https://plato.stanford.edu/entries/love/"
+      sep: "https://plato.stanford.edu/entries/plato-friendship/"
     }
   },
   {
@@ -205,7 +204,7 @@ const GLOSSARY_TERMS = [
     explanation: "Aristoteles ser venskab som en bærende social dyd og forudsætning for politisk fællesskab.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Venskab",
-      lex: "https://lex.dk/venskab",
+      lex: null,
       sep: "https://plato.stanford.edu/entries/friendship/"
     }
   },
@@ -217,7 +216,7 @@ const GLOSSARY_TERMS = [
     links: {
       wiki: "https://da.wikipedia.org/wiki/Agape",
       lex: "https://lex.dk/agape",
-      sep: null
+      sep: "https://plato.stanford.edu/entries/love/"
     }
   },
   {
@@ -226,8 +225,8 @@ const GLOSSARY_TERMS = [
     danish: "nydelse",
     explanation: "Et centralt diskussionsemne i etik: om nydelse er mål, middel eller ledsagefænomen.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Nydelse",
-      lex: "https://lex.dk/nydelse",
+      wiki: "https://da.wikipedia.org/wiki/Hedonisme",
+      lex: "https://lex.dk/hedone",
       sep: "https://plato.stanford.edu/entries/pleasure/"
     }
   },
@@ -271,24 +270,24 @@ const GLOSSARY_TERMS = [
     explanation: "Begærets styring er et omdrejningspunkt for både platonsk og stoisk etik.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Beg%C3%A6r",
-      lex: "https://lex.dk/beg%C3%A6r",
+      lex: "https://lex.dk/epithymia ",
       sep: "https://plato.stanford.edu/entries/desire/"
     }
   },
   {
     greek: "βούλησις",
     transliteration: "boulesis",
-    danish: "vilje",
+    danish: "stræben, vilje, hensigt",
     explanation: "Viljen retter sig mod det, der fremtræder som godt, men kan formes af karakter.",
     links: {
       wiki: null,
       lex: "https://lex.dk/vilje",
-      sep: "https://plato.stanford.edu/entries/desire/"
+      sep: "https://plato.stanford.edu/entries/aristotle-de-motu/"
     }
   },
   {
     greek: "προαίρεσις",
-    transliteration: "prohairesis",
+    transliteration: "prohairesis eller proairesis",
     danish: "overvejet valg",
     explanation: "Hos Aristoteles det ansvarsbærende valg efter overvejelse af midler og mål.",
     links: {
@@ -303,9 +302,9 @@ const GLOSSARY_TERMS = [
     danish: "livsform",
     explanation: "Bruges om forskellige måder at leve på, fx det kontemplative eller politiske liv.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Bios",
-      lex: null,
-      sep: null
+      wiki: "https://da.wikipedia.org/wiki/Livsform_(etnologi)",
+      lex: "https://lex.dk/livsformer_-_hos_mennesker",
+      sep: "https://plato.stanford.edu/entries/aristotle-politics/"
     }
   },
   {
@@ -314,8 +313,8 @@ const GLOSSARY_TERMS = [
     danish: "natur",
     explanation: "Natur som indre princip for bevægelse og udvikling, ikke kun ydre omgivelser.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Fyse",
-      lex: "https://lex.dk/fyse",
+      wiki: null,
+      lex: "https://lex.dk/natur",
       sep: "https://plato.stanford.edu/entries/aristotle-biology/"
     }
   },
@@ -325,9 +324,9 @@ const GLOSSARY_TERMS = [
     danish: "lov / norm",
     explanation: "Spændingen mellem natur og lov er et nøglespor i sofistik, politik og tragedie.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Nomos",
+      wiki: null,
       lex: "https://lex.dk/lov",
-      sep: null
+      sep: "https://plato.stanford.edu/entries/protagoras/"
     }
   },
   {
@@ -347,8 +346,8 @@ const GLOSSARY_TERMS = [
     danish: "forfatning / statsorden",
     explanation: "Kan betyde både konstitution, borgerstatus og den overordnede politiske orden.",
     links: {
-      wiki: "https://da.wikipedia.org/wiki/Politeia",
-      lex: null,
+      wiki: "https://da.wikipedia.org/wiki/Staten_(Platon)",
+      lex: "https://lex.dk/Athens_demokrati",
       sep: "https://plato.stanford.edu/entries/ancient-political/"
     }
   },
@@ -359,13 +358,13 @@ const GLOSSARY_TERMS = [
     explanation: "Borgeren defineres i antikken gennem deltagelse i dom, råd og offentlige embeder.",
     links: {
       wiki: "https://da.wikipedia.org/wiki/Borger",
-      lex: "https://lex.dk/borger",
-      sep: null
+      lex: "https://lex.dk/polis",
+      sep: "https://plato.stanford.edu/entries/aristotle-politics/"
     }
   },
   {
     greek: "δημοκρατία",
-    transliteration: "demokratia",
+    transliteration: "",
     danish: "demokrati",
     explanation: "Folkestyre i klassisk forstand, men med andre institutioner end moderne repræsentation.",
     links: {
@@ -382,9 +381,10 @@ const GLOSSARY_TERMS = [
     links: {
       wiki: "https://da.wikipedia.org/wiki/Oligarki",
       lex: "https://lex.dk/oligarki",
-      sep: null
+      sep: "https://plato.stanford.edu/entries/ancient-political/"
     }
   },
+  // Checket hertil 2027-04-16
   {
     greek: "τυραννίς",
     transliteration: "tyrannis",

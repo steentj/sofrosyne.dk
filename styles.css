@@ -85,8 +85,8 @@ header { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); backg
 .nav a[aria-current="page"], .nav a.active { color: var(--brand-600); }
 .nav a::after { content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background: linear-gradient(90deg,var(--brand),var(--brand-accent)); border-radius:2px; transition: width .35s ease; }
 .nav a:hover::after, .nav a[aria-current="page"]::after, .nav a.active::after { width:100%; }
-.nav span[style*="Cinzel"] { display: inline-flex; flex-direction: column; line-height: 1.05; }
-.nav span[style*="Cinzel"]::after { content: "AI slop"; font-size: 0.52em; font-weight: 600; letter-spacing: 0.08em; margin-top: 0.2rem; color: var(--ink-soft); }
+.nav .site-title { display: inline-flex; flex-direction: column; line-height: 1.05; }
+.nav .site-title::after { content: "AI slop"; font-size: 0.52em; font-weight: 600; letter-spacing: 0.08em; margin-top: 0.2rem; color: var(--ink-soft); }
 
 /* Nav groups */
 .nav-group { display: block; }

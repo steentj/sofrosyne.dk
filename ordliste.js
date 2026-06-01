@@ -77,6 +77,17 @@ const GLOSSARY_TERMS = [
     }
   },
   {
+    greek: "δαίμων",
+    transliteration: "daimon",
+    danish: "ånd / vejledende ånd",
+    explanation: "Et mellemvæsen mellem guder og mennesker; i klassisk filosofi også en indre vejledende stemme.",
+    links: {
+      wiki: "https://da.wikipedia.org/wiki/Daimon",
+      lex: null,
+      sep: null
+    }
+  },
+  {
     greek: "ψυχή",
     transliteration: "psyche",
     danish: "sjæl",
